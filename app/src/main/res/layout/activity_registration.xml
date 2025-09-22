@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="145dp"
+        app:srcCompat="@drawable/guni_pink_logo"
+        android:contentDescription="@string/img"
+        android:layout_marginTop="@dimen/margin_top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <!--
+         If width is 0dp, then we can set
+         margin start and end as we need,
+         but if the width is wrap_content,
+         it occupies the entire width of
+         the screen as the constraints from
+         start_tostartof and end_toendof
+         are parent, and also, as the width
+         of the edit text is also 0 dp,
+         so it stretches to the end.
+     -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/name_register"
+                android:textSize="@dimen/txt_size"
+                android:layout_marginTop="@dimen/margin_top"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <EditText
+                android:id="@+id/edittext1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="name"
+                android:hint="@string/e1_register"
+                android:inputType="text"
+                android:layout_marginStart="@dimen/margin_start"
+                app:layout_constraintStart_toEndOf="@id/textview1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBaseline_toBaselineOf="@id/textview1"
+                />
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/num_register"
+                android:textSize="@dimen/txt_size"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/textview1"
+                android:layout_marginTop="@dimen/margin_top"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <EditText
+                android:id="@+id/edittext2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/e2_register"
+                android:autofillHints="phone"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:layout_marginStart="@dimen/margin_start"
+                app:layout_constraintStart_toEndOf="@id/textview2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBaseline_toBaselineOf="@id/textview2"
+                />
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/city_register"
+                android:textSize="@dimen/txt_size"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/margin_top"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview2"
+                />
+            <EditText
+                android:id="@+id/edittext3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="city"
+                android:hint="@string/e3_register"
+                android:inputType="text"
+                app:layout_constraintStart_toStartOf="@id/edittext2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBaseline_toBaselineOf="@id/textview3"
+                />
+
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/mail_register"
+                android:textSize="@dimen/txt_size"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/margin_top"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview3"
+                />
+
+            <EditText
+                android:id="@+id/edittext4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="emailAddress"
+                android:hint="@string/e4_register"
+                android:inputType="textEmailAddress"
+                app:layout_constraintStart_toStartOf="@id/edittext3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBaseline_toBaselineOf="@id/textview4"
+                />
+
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/pass_register"
+                android:textSize="@dimen/txt_size"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/margin_top"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview4"
+                />
+            <EditText
+                android:id="@+id/edittext5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="password"
+                android:hint="@string/e5_register"
+                android:inputType="text"
+                app:layout_constraintStart_toStartOf="@id/edittext4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBaseline_toBaselineOf="@id/textview5"
+                />
+
+            <TextView
+                android:id="@+id/textview6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/confm_pass_register"
+                android:textSize="@dimen/txt_size"
+                android:layout_marginTop="@dimen/margin_top"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview5"
+                />
+            <EditText
+                android:id="@+id/edittext6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="password"
+                android:hint="@string/e6_register"
+                android:inputType="text"
+                app:layout_constraintStart_toStartOf="@id/edittext5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBaseline_toBaselineOf="@id/textview6"
+                />
+
+            <!-- Used to add blank space -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toBottomOf="@id/textview6"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="30dp"
+        android:layout_marginTop="-25dp">
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_register"
+            style="@style/MyButtonStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/cardview"
+        />
+
+    <TextView
+        android:id="@+id/textview7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/acc_register"
+        android:textSize="15sp"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginStart="50dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        app:layout_constraintStart_toStartOf="@id/cardview"
+
+        />
+
+    <Button
+        android:id="@+id/btn_login_register"
+        style="@style/login_btn_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/login_register"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/textview7"
+        app:layout_constraintStart_toEndOf="@id/textview7"
+        app:layout_constraintTop_toBottomOf="@id/cardview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

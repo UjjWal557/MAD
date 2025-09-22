@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Practical3_login</string>
+    <string name="img">GUNI Logo</string>
+    <string name="name">Username:</string>
+    <string name="pass">Password:</string>
+    <string name="fp">Forgot Password?</string>
+    <string name="btn">Login</string>
+    <string name="acc">Don\'t have an account?</string>
+    <string name="sign">SIGN UP</string>
+</resources>

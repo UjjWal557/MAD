@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="url">URL</string>
+    <string name="text_url">Enter the URL to Browse</string>
+    <string name="browse">BROWSE</string>
+
+    <string name="num">Call</string>
+    <string name="call_id">Enter the Number to Call</string>
+    <string name="call">CALL</string>
+    <string name="top">DEMO EXAMPLE</string>
+
+</resources>

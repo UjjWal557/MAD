@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Practical3</string>
+
+    <!-- Main Activity Resources -->
+
+    <string name="url">Web Url</string>
+    <string name="url1">Enter the url to browse</string>
+    <string name="phone">Phone No.</string>
+    <string name="call">Call Log</string>
+    <string name="gallery">Gallery</string>
+    <string name="cam">Camera</string>
+    <string name="alarm">Alarm</string>
+    <string name="login">Login</string>
+    <string name="btn_browse">Browse</string>
+    <string name="btn_call">Call</string>
+    <string name="btn_call_log">Call Log</string>
+    <string name="btn_gallery">Gallery</string>
+    <string name="btn_camera">Camera</string>
+    <string name="btn_alarm">Alarm</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_play">Play</string>
+    <string name="btn_stop">Stop</string>
+    <string name="check">Check</string>
+
+    <!-- Login Resources -->
+    <string name="username">Username</string>
+    <string name="pass_login">Password</string>
+    <string name="fp_login">Forgot Password?</string>
+    <string name="btn_login_page">Login</string>
+    <string name="no_acc">Don\'t have an account?</string>
+    <string name="btn_sign_up">SIGN UP</string>
+
+    <!-- Register Resources -->
+
+    <string name="name_register">User Full Name</string>
+    <string name="num_register">Phone Number</string>
+    <string name="city_register">City</string>
+    <string name="mail_register">Email</string>
+    <string name="pass_register">Password</string>
+    <string name="confm_pass_register">Confirm Password</string>
+    <string name="btn_register">Register</string>
+    <string name="acc_register">Do you have an account?</string>
+    <string name="login_register">LOGIN</string>
+    <string name="img">GUNI Logo</string>
+
+    <string name="e1_register">Full Name</string>
+    <string name="e2_register">Number</string>
+    <string name="e3_register">City</string>
+    <string name="e4_register">Email</string>
+    <string name="e5_register"> Set Password</string>
+    <string name="e6_register">Confirm Password</string>
+
+    <!-- Music Player-->
+    <string name="img_rrr">RRR</string>
+    <string name="title">MP3 PLAYER</string>
+    <string name="music_title">Dosti Music Video</string>
+</resources>

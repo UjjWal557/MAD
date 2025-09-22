@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Registration</string>
+    <string name="name">User Full Name</string>
+    <string name="num">Phone Number</string>
+    <string name="city">City</string>
+    <string name="mail">Email</string>
+    <string name="pass">Password</string>
+    <string name="confm_pass">Confirm Password</string>
+    <string name="btn1">Register</string>
+    <string name="acc">Do you have an account?</string>
+    <string name="login">LOGIN</string>
+    <string name="img">GUNI Logo</string>
+
+    <string name="e1">Full Name</string>
+    <string name="e2">Number</string>
+    <string name="e3">City</string>
+    <string name="e4">Email</string>
+    <string name="e5"> Set Password</string>
+    <string name="e6">Confirm Password</string>
+
+
+</resources>
