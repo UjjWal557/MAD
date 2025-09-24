@@ -6,15 +6,18 @@ import android.content.Intent
 
 class AlarmBroadcastReceiver : BroadcastReceiver() {
 
+    companion object {
+        const val ACTION_SERVICE = "Service1"
+    }
+
     override fun onReceive(context: Context, intent: Intent) {
-       val str1=intent.getStringExtra("Service1")
-        if (str1=="Start" || str1=="Stop")
-        {
-            val intentService= Intent(context, AlarmService::class.java)
-            if (str1=="Start")
-                context.startService(intentService)
-            else if (str1=="Stop")
-                context.stopService(intentService)
+        val str1 = intent.getStringExtra(ACTION_SERVICE)
+        if (str1 != null) {
+            val intentService = Intent(context, AlarmService::class.java)
+            when (str1) {
+                "Start" -> context.startService(intentService)
+                "Stop" -> context.stopService(intentService)
+            }
         }
     }
 }

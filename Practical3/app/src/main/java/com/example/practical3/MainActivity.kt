@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.provider.AlarmClock
 import android.provider.CallLog
 import android.provider.MediaStore
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -35,11 +36,15 @@ class MainActivity : AppCompatActivity() {
 
         fun playpause()
         {
+            Log.d("MainActivity","Inside playpause")
             Intent(applicationContext, MediaPlayerService::class.java).putExtra("ServiceData","PlayPause").apply{startService(this)}
+            Log.d("MainActivity","Inside playpuase after Intent")
         }
 
         findViewById<Button>(R.id.btn10).setOnClickListener {
+            Log.d("MainActivity","Inside playpause")
             Intent(this, MediaPlayer::class.java).also{startActivity(it)}
+            Log.d("MainActivity","Inside playpause")
         }
 
         e1= findViewById(R.id.editText1)
@@ -63,9 +68,11 @@ class MainActivity : AppCompatActivity() {
         //val btn7: Button = findViewById(R.id.btn7)
 
         btn8.setOnClickListener {
+            Log.d("MainActivity","Inside play")
             playpause()
         }
         btn9.setOnClickListener {
+            Log.d("MainActivity","Inside stop")
             stop()
         }
 
