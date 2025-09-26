@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="title">Cipher Translator</string>
+    <string name="input">Enter Text</string>
+    <string name="key">Enter key (if needed)</string>
+    <string name="output">Output will appear here</string>
+    <string name="translate">Translate</string>
+    <string name="switch_mode">Encrypt</string>
+    <string name="copy">Copy</string>
+</resources>
