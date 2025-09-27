@@ -17,14 +17,14 @@ class MainActivity : AppCompatActivity() {
 
 
     //SnackBar, must use lateinit, as snack variable is being assigned for the first time
-    private lateinit var snack : ConstraintLayout //SnackBar
+      private lateinit var snack : ConstraintLayout //SnackBar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        Log.i(TAG,"onCreate called") //Logcat
+        Log.d(TAG,"onCreate called") //Logcat
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -32,14 +32,11 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        //SnackBar
-        snack=findViewById(R.id.main)
-
-        //For onCreate, that's why inside onCreate
-        Toast.makeText(this, "Toast created", Toast.LENGTH_SHORT).show()
+         snack=findViewById(R.id.main)
+         Toast.makeText(this, "Toast created", Toast.LENGTH_SHORT).show()
 
         //SnackBar
-        Snackbar.make(snack,"Snackbar created", Snackbar.LENGTH_SHORT).show()
+         Snackbar.make(snack,"Snackbar created", Snackbar.LENGTH_SHORT).show()
     }
 
 
@@ -71,34 +68,42 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         Log.d(TAG, "onStart called")
+        Toast.makeText(this, "App is Started", Toast.LENGTH_SHORT).show()
+        Snackbar.make(snack,"App is Started",Snackbar.LENGTH_LONG).show()
     }
 
     override fun onResume() {
         super.onResume()
         Log.d(TAG, "onResume called")
+        Toast.makeText(this, "App is Resumed", Toast.LENGTH_SHORT).show()
+        Snackbar.make(snack,"App is Resumed",Snackbar.LENGTH_LONG).show()
     }
 
     override fun onPause() {
         super.onPause()
         Log.d(TAG, "onPause called")
         Toast.makeText(this, "App is Paused", Toast.LENGTH_SHORT).show()
-        Snackbar.make(snack,"App Paused",Snackbar.LENGTH_INDEFINITE).setAction("Close", View.OnClickListener{
-            Toast.makeText(this, "Closed", Toast.LENGTH_SHORT).show()
-        }).show()
+       // Toast.makeText(this, "App is Paused", Toast.LENGTH_SHORT).show()
+        //Snackbar.make(snack,"App Paused",Snackbar.LENGTH_INDEFINITE).setAction("Close", View.OnClickListener{
+            //Toast.makeText(this, "Closed", Toast.LENGTH_SHORT).show()
+        //}).show()
     }
 
     override fun onStop() {
         super.onStop()
         Log.d(TAG, "onStop called")
+        Toast.makeText(this, "App is Stopped", Toast.LENGTH_SHORT).show()
     }
 
     override fun onRestart() {
         super.onRestart()
         Log.d(TAG, "onRestart called")
+        Toast.makeText(this, "App is Restarted", Toast.LENGTH_SHORT).show()
     }
 
     override fun onDestroy() {
         super.onDestroy()
         Log.d(TAG, "onDestroy called")
+        Toast.makeText(this, "App is Destroyed", Toast.LENGTH_SHORT).show()
     }
 }
