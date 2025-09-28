@@ -11,7 +11,7 @@
     </style>
 
     <style name="signup_btn_color" parent="Widget.Material3.Button">
-        <item name="backgroundTint">#FFFFFF</item>
+        <item name="backgroundTint">@android:color/transparent</item>
         <item name="android:textColor">#C11C84</item>
     </style>
 

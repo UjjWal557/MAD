@@ -26,7 +26,6 @@ class LoginActivity : AppCompatActivity() {
         }
 
         //Explicit Intent; When clicked on Sign Up button
-
         findViewById<Button>(R.id.btn_signup).setOnClickListener {
             Intent(this, RegistrationActivity::class.java).also{startActivity(it)}
         }

@@ -18,9 +18,7 @@
     <string name="btn_camera">Camera</string>
     <string name="btn_alarm">Alarm</string>
     <string name="btn_login">Login</string>
-    <string name="btn_play">Play</string>
-    <string name="btn_stop">Stop</string>
-    <string name="check">Check</string>
+    <string name="music">Music</string>
 
     <!-- Login Resources -->
     <string name="username">Username</string>

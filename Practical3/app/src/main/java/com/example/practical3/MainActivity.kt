@@ -3,9 +3,7 @@ package com.example.practical3
 import android.content.Intent
 import android.os.Bundle
 import android.provider.AlarmClock
-import android.provider.CallLog
 import android.provider.MediaStore
-import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -28,25 +26,6 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        //Music Player
-        fun stop()
-        {
-            Intent(applicationContext, MediaPlayerService::class.java).apply{stopService(this)}
-        }
-
-        fun playpause()
-        {
-            Log.d("MainActivity","Inside playpause")
-            Intent(applicationContext, MediaPlayerService::class.java).putExtra("ServiceData","PlayPause").apply{startService(this)}
-            Log.d("MainActivity","Inside playpuase after Intent")
-        }
-
-        findViewById<Button>(R.id.btn10).setOnClickListener {
-            Log.d("MainActivity","Inside playpause")
-            Intent(this, MediaPlayer::class.java).also{startActivity(it)}
-            Log.d("MainActivity","Inside playpause")
-        }
-
         e1= findViewById(R.id.editText1)
         val btn1: Button = findViewById(R.id.btn1)
 
@@ -61,21 +40,7 @@ class MainActivity : AppCompatActivity() {
 
         val btn6: Button = findViewById(R.id.btn6)
 
-        val btn8: Button = findViewById(R.id.btn8)
-
-        val btn9: Button = findViewById(R.id.btn9)
-
-        //val btn7: Button = findViewById(R.id.btn7)
-
-        btn8.setOnClickListener {
-            Log.d("MainActivity","Inside play")
-            playpause()
-        }
-        btn9.setOnClickListener {
-            Log.d("MainActivity","Inside stop")
-            stop()
-        }
-
+        //URL
         btn1.setOnClickListener()
         {
           val msg= e1.text.toString()
@@ -86,6 +51,7 @@ class MainActivity : AppCompatActivity() {
           }
         }
 
+        //Call
         btn2.setOnClickListener()
         {
             val num= e2.text.toString()
@@ -96,6 +62,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        //Call Log
         btn3.setOnClickListener()
         {
             val show = Intent(Intent.ACTION_VIEW)
@@ -103,25 +70,35 @@ class MainActivity : AppCompatActivity() {
             startActivity(show)
         }
 
+        //Gallery
         btn4.setOnClickListener()
         {
             val show = Intent(Intent.ACTION_VIEW).setType("image/*")
             startActivity(show)
         }
+
+        //Camera
         btn5.setOnClickListener()
         {
             val show = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             startActivity(show)
         }
 
+        //Alarm
         btn6.setOnClickListener()
         {
             val show = Intent(AlarmClock.ACTION_SHOW_ALARMS)
             startActivity(show)
         }
-    /* Login Button */
+
+        //Login
         findViewById<Button>(R.id.btn7).setOnClickListener {
             Intent(this, LoginActivity::class.java).also { startActivity(it) }
+        }
+
+        //Music
+        findViewById<Button>(R.id.btn8).setOnClickListener {
+            Intent(this, MediaPlayer::class.java).also{startActivity(it)}
         }
     }
 }

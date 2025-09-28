@@ -19,18 +19,18 @@ class MediaPlayer : AppCompatActivity() {
             insets
         }
         //Music Player
+        fun playPause()
+        {
+            Intent(applicationContext, MediaPlayerService::class.java).putExtra("ServiceData","PlayPause").apply{startService(this)}
+        }
+
         fun stop()
         {
             Intent(applicationContext, MediaPlayerService::class.java).apply{stopService(this)}
         }
 
-        fun playpause()
-        {
-            Intent(applicationContext, MediaPlayerService::class.java).putExtra("ServiceData","PlayPause").apply{startService(this)}
-        }
-
         findViewById<FloatingActionButton>(R.id.play).setOnClickListener {
-            playpause()
+            playPause()
         }
 
         findViewById<FloatingActionButton>(R.id.stop).setOnClickListener {
