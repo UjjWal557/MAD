@@ -12,10 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Alarm">
         <service
-            android:name=".AlarmService"
-            android:enabled="true"
-            android:exported="true">
-
+            android:name=".AlarmService">
         </service>
         <receiver
             android:name=".AlarmBroadcastReceiver"
@@ -23,8 +20,10 @@
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
-                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED">
+                </action>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED">
+                </action>
             </intent-filter>
         </receiver>
 

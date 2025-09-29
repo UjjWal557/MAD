@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnCreate: MaterialButton
     private lateinit var btnCancel: MaterialButton
     private lateinit var textAlarmTime: TextView
-    private lateinit var textClock1: TextClock
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,7 +43,6 @@ class MainActivity : AppCompatActivity() {
         btnCreate = findViewById(R.id.create_alarm)
         btnCancel = findViewById(R.id.stop_alarm)
         textAlarmTime = findViewById(R.id.alarm_time)
-        textClock1 = findViewById(R.id.textClock1)
 
         // Hide alarm card initially
         card2.visibility = View.GONE
@@ -55,48 +54,41 @@ class MainActivity : AppCompatActivity() {
 
         // Cancel alarm button
         btnCancel.setOnClickListener {
+            setAlarm(-1,"Stop")
             card2.visibility = View.GONE
         }
     }
 
     private fun showTimePickerDialog() {
-        val calendar = Calendar.getInstance()
-        val hour = calendar.get(Calendar.HOUR_OF_DAY)
-        val minute = calendar.get(Calendar.MINUTE)
+        val calendar : Calendar = Calendar.getInstance()
+        val hour : Int = calendar.get(Calendar.HOUR_OF_DAY)
+        val minute : Int = calendar.get(Calendar.MINUTE)
 
         val picker = TimePickerDialog(this, { _, selectedHour, selectedMinute ->
             setAlarmTime(selectedHour, selectedMinute)
         }, hour, minute, false)
-
         picker.show()
     }
 
-
-    private fun setAlarmTime(hour: Int, minute: Int) {
+    private fun setAlarmTime(hour: Int, minute: Int)
+    {
         val alarmCalendar = Calendar.getInstance()
-        alarmCalendar.set(Calendar.HOUR_OF_DAY, hour)
-        alarmCalendar.set(Calendar.MINUTE, minute)
-        alarmCalendar.set(Calendar.SECOND, 0)
+        val year: Int= alarmCalendar.get(Calendar.YEAR)
+        val month: Int= alarmCalendar.get(Calendar.MONTH)
+        val day: Int= alarmCalendar.get(Calendar.DATE)
 
-        val formatter = SimpleDateFormat("hh:mm:ss a, MMM dd yyyy", Locale.getDefault())
-        val formattedTime = formatter.format(alarmCalendar.time)
-
-        // Update the alarm time display in CardView 2
-
-        textAlarmTime.text = formattedTime
-
+        alarmCalendar.set(year,month,day,hour,minute,0)
+        textAlarmTime.text= SimpleDateFormat("hh:mm ss a").format(alarmCalendar.time)
+        setAlarm(alarmCalendar.timeInMillis,"Start")
+        Toast.makeText(this,"Time set",Toast.LENGTH_SHORT).show()
         card2.visibility = View.VISIBLE
-
-        // Optional: schedule the alarm
-        // setAlarm(alarmCalendar.timeInMillis, "Start")
     }
 
-   /* private fun setAlarm(millisTime:Long,str:String)
+      private fun setAlarm(millisTime:Long,str: String)
     {
         val intent= Intent(this, AlarmBroadcastReceiver::class.java)
         intent.putExtra("Service1",str)
-        val pendingIntent= PendingIntent.getBroadcast(applicationContext,2343243,intent,
-            PendingIntent.FLAG_UPDATE_CURRENT)
+        val pendingIntent= PendingIntent.getBroadcast(applicationContext,234324243,intent,PendingIntent.FLAG_IMMUTABLE)
         val alarmManager=getSystemService(ALARM_SERVICE) as AlarmManager
         if (str=="Start")
         {
@@ -107,13 +99,15 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"Start Alarm", Toast.LENGTH_SHORT).show()
             }
             else{
-                startActivity(Intent(Setting,ACTION_REQUEST_SCHEDULE_EXACT_ALARM))
+                Toast.makeText(this,"Can't set Alarm", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM))
             }
         }
-        else if (str="Stop")
+        else if (str=="Stop")
         {
             alarmManager.cancel(pendingIntent)
-
+            sendBroadcast(intent)
+            Toast.makeText(this,"Alarm Stopped", Toast.LENGTH_SHORT).show()
         }
-    }*/
+    }
 }

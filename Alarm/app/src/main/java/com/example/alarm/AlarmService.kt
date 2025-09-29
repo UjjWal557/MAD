@@ -22,7 +22,6 @@ class AlarmService : Service() {
         if (intent != null && !mediaPlayer.isPlaying) {
             mediaPlayer.start()
         }
-
         return START_STICKY
     }
 
