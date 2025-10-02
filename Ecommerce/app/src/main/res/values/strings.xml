@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Ecommerce</string>
+    <string name="logo">Quick Deals</string>
+
+    <string name="welcome">Welcome Back!</string>
+    <string name="desc">Login to Continue</string>
+    <!--Login Details-->
+    <string name="mail">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="no_acc">Don\'t have an account?</string>
+    <string name="signup">SIGN UP</string>
+
+    <!--Register Details-->
+    <string name="name">Name</string>
+    <string name="city">City</string>
+    <string name="number">Number</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>
