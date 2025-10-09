@@ -213,14 +213,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         style="@style/signup_btn_color"
         app:layout_constraintBaseline_toBaselineOf="@id/textview7"
         app:layout_constraintStart_toEndOf="@id/textview7"
         />
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

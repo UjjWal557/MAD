@@ -7,7 +7,7 @@
     <!--Login Details-->
     <string name="mail">Email</string>
     <string name="password">Password</string>
-    <string name="login">Login</string>
+    <string name="login">LOGIN</string>
     <string name="no_acc">Don\'t have an account?</string>
     <string name="signup">SIGN UP</string>
 

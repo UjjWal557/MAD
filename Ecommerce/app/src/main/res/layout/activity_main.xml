@@ -122,6 +122,14 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.card.MaterialCardView>
 
+
+    <View
+        android:id="@+id/bottom_space"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        app:layout_constraintTop_toBottomOf="@id/loginCard"/>
+
+
         <!-- Signup Prompt -->
         <TextView
             android:id="@+id/signupPrompt"
@@ -129,9 +137,10 @@
             android:layout_height="wrap_content"
             android:text="@string/no_acc"
             android:textSize="@dimen/text"
+            android:textStyle="bold"
             android:layout_marginTop="15dp"
             android:layout_marginStart="45dp"
-            app:layout_constraintTop_toBottomOf="@id/loginCard"
+            app:layout_constraintTop_toBottomOf="@id/bottom_space"
             app:layout_constraintStart_toStartOf="@id/loginCard"
             />
 
