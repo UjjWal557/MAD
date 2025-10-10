@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             val pass=findViewById<EditText>(R.id.passwordField).text.toString()
             if(email.isNotEmpty() && pass.isNotEmpty()) {
                 Toast.makeText(this, "Login Successful", Toast.LENGTH_LONG).show()
-                Intent(this,Register::class.java).also{startActivity(it)}
+                Intent(this, HomeActivity::class.java).also{startActivity(it)}
             }
             else{
                 Toast.makeText(this, "Please enter your credentials", Toast.LENGTH_LONG).show()
