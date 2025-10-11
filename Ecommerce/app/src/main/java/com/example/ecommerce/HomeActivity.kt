@@ -1,78 +1,64 @@
 package com.example.ecommerce
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.SearchView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-
-class HomeActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_home)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
-    }
-}
-
-
-// File: HomeActivity.kt
-
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.SearchView // Make sure to import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.example.ecommerce.adapter.ProductAdapter
+import com.example.ecommerce.databinding.ActivityHomeBinding
+import com.example.ecommerce.model.Product
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.IOException
 import java.util.Locale
 
 class HomeActivity : AppCompatActivity() {
-
-    private lateinit var productsRecyclerView: RecyclerView
-    private lateinit var searchView: SearchView
+    private lateinit var binding: ActivityHomeBinding
     private lateinit var productAdapter: ProductAdapter
-
-    // Keep a copy of the original, full list of products
     private var originalProductList = listOf<Product>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        binding = ActivityHomeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        productsRecyclerView = findViewById(R.id.recyclerViewProducts)
-        searchView = findViewById(R.id.searchView)
+        setupEdgeToEdge()
 
         setupRecyclerView()
         setupSearchView()
+
+        originalProductList = loadProductsFromAssets()
+        productAdapter.submitList(originalProductList)
     }
 
     private fun setupRecyclerView() {
-        // Load the original list from JSON
-        originalProductList = loadProductsFromAssets()
+        productAdapter = ProductAdapter { product, action ->
+            when (action) {
+                ProductAdapter.Action.ADD_TO_CART -> {
+                    Toast.makeText(this, "${product.name} added to cart", Toast.LENGTH_SHORT).show()
+                }
+                ProductAdapter.Action.VIEW_DETAILS -> {
+                    Log.d("HomeActivity", "Viewing details for ${product.name}")
+                }
+            }
+        }
 
-        // Initialize the adapter with the full list
-        productAdapter = ProductAdapter(originalProductList)
-        productsRecyclerView.adapter = productAdapter
-        productsRecyclerView.layoutManager = LinearLayoutManager(this)
+        binding.recyclerViewProducts.apply {
+            adapter = productAdapter
+            layoutManager = LinearLayoutManager(this@HomeActivity)
+        }
     }
 
-    // --- ADD THIS ENTIRE FUNCTION ---
     private fun setupSearchView() {
-        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-
-            // This method is called when the user presses the search button
+        binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
-                // You can optionally handle this, but live filtering is often better
-                return false
+                return false // We handle filtering live, so no action on submit
             }
 
-            // This method is called every time the user types a character
             override fun onQueryTextChange(newText: String?): Boolean {
                 filterProducts(newText)
                 return true
@@ -80,23 +66,35 @@ class HomeActivity : AppCompatActivity() {
         })
     }
 
-    // --- ADD THIS ENTIRE FUNCTION ---
     private fun filterProducts(query: String?) {
         val filteredList = if (query.isNullOrBlank()) {
-            // If the search query is empty, show the original full list
             originalProductList
         } else {
-            // Otherwise, filter the original list
+            val searchQuery = query.lowercase(Locale.ROOT)
             originalProductList.filter { product ->
-                // Check if the product name contains the search query (case-insensitive)
-                product.name.lowercase(Locale.ROOT).contains(query.lowercase(Locale.ROOT))
+                product.name.lowercase(Locale.ROOT).contains(searchQuery)
             }
         }
-        // Update the adapter with the new filtered list
-        productAdapter.filterList(filteredList)
+
+        productAdapter.submitList(filteredList)
+    }
+    private fun loadProductsFromAssets(): List<Product> {
+        return try {
+            val jsonString = assets.open("products.json").bufferedReader().use { it.readText() }
+            val listProductType = object : TypeToken<List<Product>>() {}.type
+            Gson().fromJson(jsonString, listProductType)
+        } catch (ioException: IOException) {
+            ioException.printStackTrace()
+            emptyList()
+        }
     }
 
-    private fun loadProductsFromAssets(): List<Product> {
-        // ... (This function remains the same as before)
+    private fun setupEdgeToEdge() {
+
+        ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
     }
 }

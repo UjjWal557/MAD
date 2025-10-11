@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    buildFeatures{
+        viewBinding=true
+    }
 }
 
 dependencies {
@@ -47,4 +51,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.gson)
     implementation(libs.coil)
+    implementation("com.github.bumptech.glide:glide:5.0.5")
+
 }
