@@ -35,84 +35,35 @@
             tools:text="Product Name" />
 
         <TextView
-            android:id="@+id/textViewBestPrice"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/textViewProductName"
-            app:layout_constraintTop_toBottomOf="@+id/textViewProductName"
-            tools:text="Best Price: ₹13,999" />
-
-        <TextView
-            android:id="@+id/textViewSellerInfo"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            app:layout_constraintStart_toStartOf="@+id/textViewBestPrice"
-            app:layout_constraintTop_toBottomOf="@+id/textViewBestPrice"
-            tools:text="from GadgetZone (4.6⭐)" />
-
-        <Button
-            android:id="@+id/buttonViewDetails"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="View Details"
-            android:layout_marginTop="8dp"
-            app:layout_constraintStart_toStartOf="@+id/textViewSellerInfo"
-            app:layout_constraintTop_toBottomOf="@id/textViewSellerInfo"/>
-
-        <!-- This section is for detailed view, initially hidden -->
-        <androidx.constraintlayout.widget.Group
-            android:id="@+id/groupProductDetails"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            app:constraint_referenced_ids="textViewDescription, textViewSellersTitle, textViewSellersList, buttonAddToCart"
-            tools:visibility="visible"/>
-
-        <TextView
             android:id="@+id/textViewDescription"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            tools:text="This is a detailed product description that explains all the features and benefits."
-            app:layout_constraintTop_toBottomOf="@id/imageViewProduct"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewProductName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewProductName"
+            tools:text="Short product description..." />
 
         <TextView
             android:id="@+id/textViewSellersTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Price Comparison:"
+            android:text="Available from:"
             android:textStyle="bold"
-            android:layout_marginTop="12dp"
-            app:layout_constraintTop_toBottomOf="@id/textViewDescription"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/imageViewProduct"
             app:layout_constraintStart_toStartOf="parent"/>
 
-        <TextView
-            android:id="@+id/textViewSellersList"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSellers"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            tools:text="- ElectroHub: ₹14,999 (4.5⭐)\n- GadgetZone: ₹14,850 (4.3⭐)"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@id/textViewSellersTitle"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="4dp"
-            android:lineSpacingExtra="4dp"/>
-
-        <Button
-            android:id="@+id/buttonAddToCart"
-            style="@style/Widget.MaterialComponents.Button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Add to Cart"
-            app:layout_constraintTop_toBottomOf="@id/textViewSellersList"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp"/>
+            tools:listitem="@layout/item_seller" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

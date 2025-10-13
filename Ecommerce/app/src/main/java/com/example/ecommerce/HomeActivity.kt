@@ -1,8 +1,7 @@
 package com.example.ecommerce
 
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.core.view.ViewCompat
@@ -27,25 +26,17 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setupEdgeToEdge()
-
         setupRecyclerView()
         setupSearchView()
+        setupBottomNavigation() // Add this call
 
         originalProductList = loadProductsFromAssets()
         productAdapter.submitList(originalProductList)
     }
 
     private fun setupRecyclerView() {
-        productAdapter = ProductAdapter { product, action ->
-            when (action) {
-                ProductAdapter.Action.ADD_TO_CART -> {
-                    Toast.makeText(this, "${product.name} added to cart", Toast.LENGTH_SHORT).show()
-                }
-                ProductAdapter.Action.VIEW_DETAILS -> {
-                    Log.d("HomeActivity", "Viewing details for ${product.name}")
-                }
-            }
-        }
+        // Instantiate the refactored adapter
+        productAdapter = ProductAdapter()
 
         binding.recyclerViewProducts.apply {
             adapter = productAdapter
@@ -56,7 +47,7 @@ class HomeActivity : AppCompatActivity() {
     private fun setupSearchView() {
         binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
-                return false // We handle filtering live, so no action on submit
+                return false
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
@@ -64,6 +55,24 @@ class HomeActivity : AppCompatActivity() {
                 return true
             }
         })
+    }
+
+    // Add this new function for navigation
+    private fun setupBottomNavigation() {
+        binding.bottomNavigationView.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.navigation_home -> {
+                    // Already on the home screen, do nothing
+                    true
+                }
+                R.id.navigation_cart -> {
+                    // Navigate to CartActivity
+                    startActivity(Intent(this, CartActivity::class.java))
+                    true
+                }
+                else -> false
+            }
+        }
     }
 
     private fun filterProducts(query: String?) {
@@ -75,9 +84,9 @@ class HomeActivity : AppCompatActivity() {
                 product.name.lowercase(Locale.ROOT).contains(searchQuery)
             }
         }
-
         productAdapter.submitList(filteredList)
     }
+
     private fun loadProductsFromAssets(): List<Product> {
         return try {
             val jsonString = assets.open("products.json").bufferedReader().use { it.readText() }
@@ -90,7 +99,6 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun setupEdgeToEdge() {
-
         ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
