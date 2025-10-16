@@ -28,6 +28,14 @@
         "feedbackCount": 2100,
         "isTrusted": true,
         "deliveryDays": 1
+      },
+      {
+        "sellerName": "TechEmporium",
+        "price": 78999.00,
+        "rating": 4.6,
+        "feedbackCount": 950,
+        "isTrusted": true,
+        "deliveryDays": 2
       }
     ]
   },
@@ -52,6 +60,22 @@
         "feedbackCount": 950,
         "isTrusted": true,
         "deliveryDays": 2
+      },
+      {
+        "sellerName": "GlobalElectronics",
+        "price": 134500.00,
+        "rating": 4.8,
+        "feedbackCount": 1100,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "PrimeDeals",
+        "price": 135500.00,
+        "rating": 4.7,
+        "feedbackCount": 2500,
+        "isTrusted": false,
+        "deliveryDays": 3
       }
     ]
   },
@@ -76,6 +100,22 @@
         "feedbackCount": 1800,
         "isTrusted": true,
         "deliveryDays": 1
+      },
+      {
+        "sellerName": "GadgetGalaxy",
+        "price": 70500.00,
+        "rating": 4.5,
+        "feedbackCount": 900,
+        "isTrusted": true,
+        "deliveryDays": 3
+      },
+      {
+        "sellerName": "QuickShipments",
+        "price": 69500.00,
+        "rating": 4.6,
+        "feedbackCount": 1300,
+        "isTrusted": false,
+        "deliveryDays": 2
       }
     ]
   },
@@ -100,6 +140,22 @@
         "feedbackCount": 750,
         "isTrusted": false,
         "deliveryDays": 4
+      },
+      {
+        "sellerName": "Amazon",
+        "price": 64999.00,
+        "rating": 4.7,
+        "feedbackCount": 3500,
+        "isTrusted": true,
+        "deliveryDays": 1
+      },
+      {
+        "sellerName": "ValueRetail",
+        "price": 63999.00,
+        "rating": 4.6,
+        "feedbackCount": 1100,
+        "isTrusted": true,
+        "deliveryDays": 3
       }
     ]
   },
@@ -124,6 +180,22 @@
         "feedbackCount": 600,
         "isTrusted": true,
         "deliveryDays": 3
+      },
+      {
+        "sellerName": "Croma",
+        "price": 101900.00,
+        "rating": 4.9,
+        "feedbackCount": 850,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "DigitalWorld",
+        "price": 99500.00,
+        "rating": 4.7,
+        "feedbackCount": 1200,
+        "isTrusted": false,
+        "deliveryDays": 2
       }
     ]
   },
@@ -148,6 +220,22 @@
         "feedbackCount": 980,
         "isTrusted": true,
         "deliveryDays": 2
+      },
+      {
+        "sellerName": "ElectroHub",
+        "price": 186500.00,
+        "rating": 4.6,
+        "feedbackCount": 700,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "NextGenElectronics",
+        "price": 190500.00,
+        "rating": 4.7,
+        "feedbackCount": 300,
+        "isTrusted": true,
+        "deliveryDays": 4
       }
     ]
   },
@@ -172,6 +260,22 @@
         "feedbackCount": 1200,
         "isTrusted": true,
         "deliveryDays": 2
+      },
+      {
+        "sellerName": "Appario Retail",
+        "price": 29490.00,
+        "rating": 4.9,
+        "feedbackCount": 5500,
+        "isTrusted": true,
+        "deliveryDays": 1
+      },
+      {
+        "sellerName": "Croma",
+        "price": 29990.00,
+        "rating": 4.8,
+        "feedbackCount": 2100,
+        "isTrusted": true,
+        "deliveryDays": 1
       }
     ]
   },
@@ -188,6 +292,30 @@
         "feedbackCount": 800,
         "isTrusted": true,
         "deliveryDays": 2
+      },
+      {
+        "sellerName": "Imagine Store",
+        "price": 42500.00,
+        "rating": 4.9,
+        "feedbackCount": 550,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "Unicorn Store",
+        "price": 41990.00,
+        "rating": 4.8,
+        "feedbackCount": 600,
+        "isTrusted": true,
+        "deliveryDays": 1
+      },
+      {
+        "sellerName": "Reliance Digital",
+        "price": 42900.00,
+        "rating": 4.7,
+        "feedbackCount": 950,
+        "isTrusted": true,
+        "deliveryDays": 1
       }
     ]
   },
@@ -212,6 +340,22 @@
         "feedbackCount": 900,
         "isTrusted": true,
         "deliveryDays": 1
+      },
+      {
+        "sellerName": "Appario Retail",
+        "price": 29500.00,
+        "rating": 4.7,
+        "feedbackCount": 1200,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "GadgetZone",
+        "price": 29900.00,
+        "rating": 4.5,
+        "feedbackCount": 500,
+        "isTrusted": false,
+        "deliveryDays": 3
       }
     ]
   },
@@ -228,6 +372,30 @@
         "feedbackCount": 3200,
         "isTrusted": true,
         "deliveryDays": 1
+      },
+      {
+        "sellerName": "MDComputers",
+        "price": 9200.00,
+        "rating": 4.8,
+        "feedbackCount": 800,
+        "isTrusted": true,
+        "deliveryDays": 3
+      },
+      {
+        "sellerName": "TechEmporium",
+        "price": 9599.00,
+        "rating": 4.7,
+        "feedbackCount": 1500,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "UrbanTech",
+        "price": 9350.00,
+        "rating": 4.6,
+        "feedbackCount": 950,
+        "isTrusted": false,
+        "deliveryDays": 2
       }
     ]
   },
@@ -244,6 +412,30 @@
         "feedbackCount": 15000,
         "isTrusted": true,
         "deliveryDays": 3
+      },
+      {
+        "sellerName": "Appario Retail",
+        "price": 2099.00,
+        "rating": 4.7,
+        "feedbackCount": 25000,
+        "isTrusted": true,
+        "deliveryDays": 1
+      },
+      {
+        "sellerName": "GlobalElectronics",
+        "price": 2249.00,
+        "rating": 4.6,
+        "feedbackCount": 12000,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "ValueRetail",
+        "price": 1999.00,
+        "rating": 4.5,
+        "feedbackCount": 18000,
+        "isTrusted": false,
+        "deliveryDays": 4
       }
     ]
   },
@@ -260,6 +452,30 @@
         "feedbackCount": 500,
         "isTrusted": true,
         "deliveryDays": 4
+      },
+      {
+        "sellerName": "Keychron India",
+        "price": 8299.00,
+        "rating": 4.9,
+        "feedbackCount": 700,
+        "isTrusted": true,
+        "deliveryDays": 3
+      },
+      {
+        "sellerName": "MDComputers",
+        "price": 7999.00,
+        "rating": 4.8,
+        "feedbackCount": 450,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "TechEmporium",
+        "price": 7799.00,
+        "rating": 4.7,
+        "feedbackCount": 300,
+        "isTrusted": false,
+        "deliveryDays": 5
       }
     ]
   },
@@ -284,6 +500,22 @@
         "feedbackCount": 400,
         "isTrusted": true,
         "deliveryDays": 2
+      },
+      {
+        "sellerName": "Croma",
+        "price": 151500.00,
+        "rating": 4.8,
+        "feedbackCount": 350,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "PrimeDeals",
+        "price": 148990.00,
+        "rating": 4.7,
+        "feedbackCount": 500,
+        "isTrusted": false,
+        "deliveryDays": 4
       }
     ]
   },
@@ -300,6 +532,30 @@
         "feedbackCount": 300,
         "isTrusted": true,
         "deliveryDays": 2
+      },
+      {
+        "sellerName": "GoPro India",
+        "price": 46500.00,
+        "rating": 4.8,
+        "feedbackCount": 250,
+        "isTrusted": true,
+        "deliveryDays": 3
+      },
+      {
+        "sellerName": "GadgetGalaxy",
+        "price": 44500.00,
+        "rating": 4.6,
+        "feedbackCount": 400,
+        "isTrusted": false,
+        "deliveryDays": 4
+      },
+      {
+        "sellerName": "UrbanTech",
+        "price": 45500.00,
+        "rating": 4.7,
+        "feedbackCount": 200,
+        "isTrusted": true,
+        "deliveryDays": 1
       }
     ]
   },
@@ -316,6 +572,30 @@
         "feedbackCount": 25000,
         "isTrusted": true,
         "deliveryDays": 1
+      },
+      {
+        "sellerName": "Appario Retail",
+        "price": 13899.00,
+        "rating": 4.8,
+        "feedbackCount": 18000,
+        "isTrusted": true,
+        "deliveryDays": 1
+      },
+      {
+        "sellerName": "Cloudtail India",
+        "price": 14099.00,
+        "rating": 4.7,
+        "feedbackCount": 22000,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "ValueRetail",
+        "price": 13799.00,
+        "rating": 4.6,
+        "feedbackCount": 15000,
+        "isTrusted": false,
+        "deliveryDays": 3
       }
     ]
   },
@@ -340,6 +620,22 @@
         "feedbackCount": 1200,
         "isTrusted": true,
         "deliveryDays": 3
+      },
+      {
+        "sellerName": "Reliance Digital",
+        "price": 55000.00,
+        "rating": 4.8,
+        "feedbackCount": 2500,
+        "isTrusted": true,
+        "deliveryDays": 1
+      },
+      {
+        "sellerName": "Amazon",
+        "price": 54990.00,
+        "rating": 4.9,
+        "feedbackCount": 7000,
+        "isTrusted": true,
+        "deliveryDays": 2
       }
     ]
   },
@@ -356,6 +652,30 @@
         "feedbackCount": 850,
         "isTrusted": false,
         "deliveryDays": 5
+      },
+      {
+        "sellerName": "Games The Shop",
+        "price": 30500.00,
+        "rating": 4.8,
+        "feedbackCount": 600,
+        "isTrusted": true,
+        "deliveryDays": 3
+      },
+      {
+        "sellerName": "ElectroHub",
+        "price": 28999.00,
+        "rating": 4.6,
+        "feedbackCount": 1100,
+        "isTrusted": false,
+        "deliveryDays": 4
+      },
+      {
+        "sellerName": "GlobalElectronics",
+        "price": 29990.00,
+        "rating": 4.7,
+        "feedbackCount": 950,
+        "isTrusted": true,
+        "deliveryDays": 2
       }
     ]
   },
@@ -378,6 +698,22 @@
         "price": 24990.00,
         "rating": 4.8,
         "feedbackCount": 1500,
+        "isTrusted": true,
+        "deliveryDays": 1
+      },
+      {
+        "sellerName": "Headphone Zone",
+        "price": 25500.00,
+        "rating": 4.9,
+        "feedbackCount": 900,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "Croma",
+        "price": 25990.00,
+        "rating": 4.7,
+        "feedbackCount": 1300,
         "isTrusted": true,
         "deliveryDays": 1
       }
@@ -404,6 +740,22 @@
         "feedbackCount": 600,
         "isTrusted": true,
         "deliveryDays": 4
+      },
+      {
+        "sellerName": "Appario Retail",
+        "price": 44500.00,
+        "rating": 4.8,
+        "feedbackCount": 800,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "ValueRetail",
+        "price": 42999.00,
+        "rating": 4.5,
+        "feedbackCount": 550,
+        "isTrusted": false,
+        "deliveryDays": 5
       }
     ]
   },
@@ -418,6 +770,30 @@
         "price": 109990.00,
         "rating": 4.9,
         "feedbackCount": 150,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "DJI Official",
+        "price": 112000.00,
+        "rating": 4.9,
+        "feedbackCount": 100,
+        "isTrusted": true,
+        "deliveryDays": 4
+      },
+      {
+        "sellerName": "UrbanTech",
+        "price": 108500.00,
+        "rating": 4.8,
+        "feedbackCount": 200,
+        "isTrusted": false,
+        "deliveryDays": 3
+      },
+      {
+        "sellerName": "GadgetGalaxy",
+        "price": 110500.00,
+        "rating": 4.7,
+        "feedbackCount": 120,
         "isTrusted": true,
         "deliveryDays": 2
       }
@@ -444,8 +820,383 @@
         "feedbackCount": 80000,
         "isTrusted": true,
         "deliveryDays": 2
+      },
+      {
+        "sellerName": "Flipkart Assured",
+        "price": 1349.00,
+        "rating": 4.1,
+        "feedbackCount": 120000,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "ValueRetail",
+        "price": 1199.00,
+        "rating": 4.0,
+        "feedbackCount": 95000,
+        "isTrusted": false,
+        "deliveryDays": 3
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Microsoft Surface Laptop 5",
+    "description": "Blazing-fast performance and sleek portability in a premium laptop with a vibrant PixelSense touchscreen and an exceptional typing experience.",
+    "imageUrl": "https://placehold.co/600x400/00A4EF/FFFFFF?text=Surface+Laptop+5",
+    "sellers": [
+      {
+        "sellerName": "Microsoft Store",
+        "price": 104999.00,
+        "rating": 4.8,
+        "feedbackCount": 350,
+        "isTrusted": true,
+        "deliveryDays": 3
+      },
+      {
+        "sellerName": "Reliance Digital",
+        "price": 105999.00,
+        "rating": 4.7,
+        "feedbackCount": 450,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "Appario Retail",
+        "price": 102999.00,
+        "rating": 4.8,
+        "feedbackCount": 600,
+        "isTrusted": true,
+        "deliveryDays": 1
+      },
+      {
+        "sellerName": "NextGenElectronics",
+        "price": 103500.00,
+        "rating": 4.6,
+        "feedbackCount": 250,
+        "isTrusted": false,
+        "deliveryDays": 4
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Amazon Echo Dot (5th Gen)",
+    "description": "Our most popular smart speaker with Alexa. The sleek, compact design delivers crisp vocals and balanced bass for full sound.",
+    "imageUrl": "https://placehold.co/600x400/232F3E/FFFFFF?text=Echo+Dot",
+    "sellers": [
+      {
+        "sellerName": "Amazon",
+        "price": 4499.00,
+        "rating": 4.6,
+        "feedbackCount": 85000,
+        "isTrusted": true,
+        "deliveryDays": 1
+      },
+      {
+        "sellerName": "Appario Retail",
+        "price": 4399.00,
+        "rating": 4.7,
+        "feedbackCount": 65000,
+        "isTrusted": true,
+        "deliveryDays": 1
+      },
+      {
+        "sellerName": "Croma",
+        "price": 4499.00,
+        "rating": 4.5,
+        "feedbackCount": 12000,
+        "isTrusted": true,
+        "deliveryDays": 1
+      },
+      {
+        "sellerName": "GlobalElectronics",
+        "price": 4299.00,
+        "rating": 4.4,
+        "feedbackCount": 25000,
+        "isTrusted": false,
+        "deliveryDays": 3
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Samsung Galaxy Tab S9",
+    "description": "The ultimate tablet for work and play, featuring a stunning Dynamic AMOLED 2X display, S Pen included, and powerful performance.",
+    "imageUrl": "https://placehold.co/600x400/B5B5B5/000000?text=Tab+S9",
+    "sellers": [
+      {
+        "sellerName": "Samsung Store",
+        "price": 72999.00,
+        "rating": 4.8,
+        "feedbackCount": 800,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "Appario Retail",
+        "price": 71999.00,
+        "rating": 4.9,
+        "feedbackCount": 1100,
+        "isTrusted": true,
+        "deliveryDays": 1
+      },
+      {
+        "sellerName": "Croma",
+        "price": 73499.00,
+        "rating": 4.7,
+        "feedbackCount": 950,
+        "isTrusted": true,
+        "deliveryDays": 1
+      },
+      {
+        "sellerName": "Reliance Digital",
+        "price": 73999.00,
+        "rating": 4.8,
+        "feedbackCount": 1200,
+        "isTrusted": true,
+        "deliveryDays": 2
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Xbox Series X",
+    "description": "The fastest, most powerful Xbox ever. Explore rich new worlds with 12 teraflops of raw graphic processing power, DirectX ray tracing, and a custom SSD.",
+    "imageUrl": "https://placehold.co/600x400/107C10/FFFFFF?text=Xbox+Series+X",
+    "sellers": [
+      {
+        "sellerName": "Amazon",
+        "price": 49990.00,
+        "rating": 4.9,
+        "feedbackCount": 4500,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "Games The Shop",
+        "price": 49500.00,
+        "rating": 4.8,
+        "feedbackCount": 900,
+        "isTrusted": true,
+        "deliveryDays": 3
+      },
+      {
+        "sellerName": "Flipkart Assured",
+        "price": 50990.00,
+        "rating": 4.7,
+        "feedbackCount": 3500,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "GadgetGalaxy",
+        "price": 48999.00,
+        "rating": 4.6,
+        "feedbackCount": 1200,
+        "isTrusted": false,
+        "deliveryDays": 4
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Fitbit Charge 6",
+    "description": "The essential fitness tracker with Google apps, heart rate on equipment, and 7 days of battery life to help you stay on track.",
+    "imageUrl": "https://placehold.co/600x400/E86C6A/FFFFFF?text=Fitbit+Charge+6",
+    "sellers": [
+      {
+        "sellerName": "Appario Retail",
+        "price": 14999.00,
+        "rating": 4.6,
+        "feedbackCount": 1200,
+        "isTrusted": true,
+        "deliveryDays": 1
+      },
+      {
+        "sellerName": "Fitbit India",
+        "price": 15499.00,
+        "rating": 4.7,
+        "feedbackCount": 800,
+        "isTrusted": true,
+        "deliveryDays": 3
+      },
+      {
+        "sellerName": "Croma",
+        "price": 14999.00,
+        "rating": 4.5,
+        "feedbackCount": 950,
+        "isTrusted": true,
+        "deliveryDays": 1
+      },
+      {
+        "sellerName": "UrbanTech",
+        "price": 14500.00,
+        "rating": 4.4,
+        "feedbackCount": 1500,
+        "isTrusted": false,
+        "deliveryDays": 2
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Logitech C920 Webcam",
+    "description": "Full HD 1080p video calling and recording with stereo audio. The perfect webcam for Skype, FaceTime, and YouTube.",
+    "imageUrl": "https://placehold.co/600x400/3D3D3D/FFFFFF?text=Logitech+C920",
+    "sellers": [
+      {
+        "sellerName": "Appario Retail",
+        "price": 7995.00,
+        "rating": 4.8,
+        "feedbackCount": 25000,
+        "isTrusted": true,
+        "deliveryDays": 1
+      },
+      {
+        "sellerName": "MDComputers",
+        "price": 7800.00,
+        "rating": 4.7,
+        "feedbackCount": 5000,
+        "isTrusted": true,
+        "deliveryDays": 3
+      },
+      {
+        "sellerName": "TechEmporium",
+        "price": 8100.00,
+        "rating": 4.6,
+        "feedbackCount": 12000,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "DigitalWorld",
+        "price": 7500.00,
+        "rating": 4.5,
+        "feedbackCount": 18000,
+        "isTrusted": false,
+        "deliveryDays": 4
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Philips Hue Starter Kit",
+    "description": "Smart lighting made easy. Includes 4 smart bulbs with white and color ambiance and the Hue Bridge to control your lights from anywhere.",
+    "imageUrl": "https://placehold.co/600x400/FFC93E/000000?text=Philips+Hue",
+    "sellers": [
+      {
+        "sellerName": "Appario Retail",
+        "price": 14999.00,
+        "rating": 4.9,
+        "feedbackCount": 4000,
+        "isTrusted": true,
+        "deliveryDays": 1
+      },
+      {
+        "sellerName": "Philips Store",
+        "price": 15999.00,
+        "rating": 4.8,
+        "feedbackCount": 2500,
+        "isTrusted": true,
+        "deliveryDays": 3
+      },
+      {
+        "sellerName": "Croma",
+        "price": 15499.00,
+        "rating": 4.7,
+        "feedbackCount": 1800,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "ElectroHub",
+        "price": 14500.00,
+        "rating": 4.6,
+        "feedbackCount": 3200,
+        "isTrusted": false,
+        "deliveryDays": 2
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Canon EOS R6 Mark II Camera",
+    "description": "A full-frame mirrorless camera for hybrid shooters. Delivers stunning photos and 4K 60p video with advanced subject tracking and in-body image stabilization.",
+    "imageUrl": "https://placehold.co/600x400/D90000/FFFFFF?text=Canon+R6+II",
+    "sellers": [
+      {
+        "sellerName": "Appario Retail",
+        "price": 243990.00,
+        "rating": 4.9,
+        "feedbackCount": 150,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "Canon India",
+        "price": 249990.00,
+        "rating": 5.0,
+        "feedbackCount": 100,
+        "isTrusted": true,
+        "deliveryDays": 4
+      },
+      {
+        "sellerName": "GadgetGalaxy",
+        "price": 240000.00,
+        "rating": 4.8,
+        "feedbackCount": 200,
+        "isTrusted": true,
+        "deliveryDays": 3
+      },
+      {
+        "sellerName": "PrimeDeals",
+        "price": 239990.00,
+        "rating": 4.7,
+        "feedbackCount": 250,
+        "isTrusted": false,
+        "deliveryDays": 3
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "iRobot Roomba j7+",
+    "description": "The robot vacuum that identifies and avoids obstacles like pet waste and charging cords. It empties itself into an enclosed bag, so you don't have to think about vacuuming for months.",
+    "imageUrl": "https://placehold.co/600x400/5C6AC4/FFFFFF?text=Roomba+j7+",
+    "sellers": [
+      {
+        "sellerName": "iRobot India",
+        "price": 69900.00,
+        "rating": 4.7,
+        "feedbackCount": 500,
+        "isTrusted": true,
+        "deliveryDays": 3
+      },
+      {
+        "sellerName": "Appario Retail",
+        "price": 68500.00,
+        "rating": 4.8,
+        "feedbackCount": 800,
+        "isTrusted": true,
+        "deliveryDays": 1
+      },
+      {
+        "sellerName": "Croma",
+        "price": 70900.00,
+        "rating": 4.6,
+        "feedbackCount": 650,
+        "isTrusted": true,
+        "deliveryDays": 2
+      },
+      {
+        "sellerName": "Reliance Digital",
+        "price": 71900.00,
+        "rating": 4.7,
+        "feedbackCount": 700,
+        "isTrusted": true,
+        "deliveryDays": 2
       }
     ]
   }
 ]
-

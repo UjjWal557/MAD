@@ -3,43 +3,60 @@ package com.example.ecommerce.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.TextView
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ecommerce.R
+import com.example.ecommerce.databinding.ItemSellerBinding
 import com.example.ecommerce.model.Seller
 
 class SellerAdapter(
-    private val sellers: List<Seller>,
-    // This is a callback function. It will be triggered when a cart button is clicked.
-    // It passes the selected Seller back to the parent adapter.
     private val onAddToCartClicked: (Seller) -> Unit
-) : RecyclerView.Adapter<SellerAdapter.ViewHolder>() {
+) : ListAdapter<Seller, SellerAdapter.SellerViewHolder>(SellerDiffCallback()) {
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val sellerName: TextView = view.findViewById(R.id.sellerName)
-        val sellerPrice: TextView = view.findViewById(R.id.sellerPrice)
-        val sellerRating: TextView = view.findViewById(R.id.sellerRating)
-        val addToCartButton: Button = view.findViewById(R.id.buttonAddToCart)
-    }
+    inner class SellerViewHolder(private val binding: ItemSellerBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(seller: Seller) {
+            binding.textViewSellerName.text = seller.sellerName
+            binding.textViewPrice.text = "₹${"%,.0f".format(seller.price)}"
+            binding.textViewRating.text = "${seller.rating} (${seller.feedbackCount})"
+            binding.textViewDelivery.text = "Delivery in ${seller.deliveryDays} days"
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_seller, parent, false)
-        return ViewHolder(view)
-    }
+            val isTrusted = seller.rating > 4.3 && seller.feedbackCount > 1000
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val seller = sellers[position]
-        holder.sellerName.text = seller.sellerName
-        holder.sellerPrice.text = "₹${seller.price}"
-        holder.sellerRating.text = "⭐ ${seller.rating} (${seller.feedbackCount})"
+            binding.textViewTrusted.visibility = View.VISIBLE
 
-        // When the button is clicked, invoke the callback with the current seller
-        holder.addToCartButton.setOnClickListener {
-            onAddToCartClicked(seller)
+            if (isTrusted) {
+                binding.textViewTrusted.text = "Trusted Seller"
+                binding.textViewTrusted.setTextColor(ContextCompat.getColor(itemView.context, R.color.trusted))
+                binding.textViewTrusted.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_trusted, 0, 0, 0)
+            } else {
+                binding.textViewTrusted.text = "Not Trusted"
+                binding.textViewTrusted.setTextColor(ContextCompat.getColor(itemView.context, R.color.not_trusted))
+                binding.textViewTrusted.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_untrusted, 0, 0, 0)
+            }
+            binding.buttonAddToCart.setOnClickListener {
+                onAddToCartClicked(seller)
+            }
         }
     }
 
-    override fun getItemCount() = sellers.size
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SellerViewHolder {
+        val binding = ItemSellerBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return SellerViewHolder(binding)
+    }
+
+    override fun onBindViewHolder(holder: SellerViewHolder, position: Int) {
+        holder.bind(getItem(position))
+    }
+
+    class SellerDiffCallback : DiffUtil.ItemCallback<Seller>() {
+        override fun areItemsTheSame(oldItem: Seller, newItem: Seller): Boolean {
+            return oldItem.sellerName == newItem.sellerName
+        }
+
+        override fun areContentsTheSame(oldItem: Seller, newItem: Seller): Boolean {
+            return oldItem == newItem
+        }
+    }
 }

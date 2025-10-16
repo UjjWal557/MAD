@@ -10,10 +10,9 @@ data class Product(
 
 data class Seller(
     val sellerName: String,
-    // Changed Int to Double to match the JSON data
     val price: Double,
     val rating: Double,
     val feedbackCount: Int,
-    val deliveryPeriod: String,
+    val deliveryDays: Int,
     val isTrusted: Boolean
 )

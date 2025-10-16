@@ -1,5 +1,7 @@
 package com.example.ecommerce.adapter
 
+import android.graphics.drawable.Drawable
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
@@ -8,11 +10,15 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.DataSource
+import com.bumptech.glide.load.engine.GlideException
+import com.bumptech.glide.request.RequestListener
+import com.bumptech.glide.request.target.Target
+import com.example.ecommerce.R
 import com.example.ecommerce.databinding.ItemProductBinding
 import com.example.ecommerce.model.Cart
 import com.example.ecommerce.model.CartItem
 import com.example.ecommerce.model.Product
-import com.example.ecommerce.model.Seller
 
 class ProductAdapter : ListAdapter<Product, ProductAdapter.ProductViewHolder>(ProductDiffCallback()) {
 
@@ -31,17 +37,40 @@ class ProductAdapter : ListAdapter<Product, ProductAdapter.ProductViewHolder>(Pr
         fun bind(product: Product) {
             binding.textViewProductName.text = product.name
             binding.textViewDescription.text = product.description
+
             Glide.with(itemView.context)
                 .load(product.imageUrl)
+                .placeholder(R.drawable.ic_placeholder) // Optional: Shows a loading image
+                .error(R.drawable.ic_error)           // Optional: Shows an error image on failure
+                .listener(object : RequestListener<Drawable> {
+                    override fun onLoadFailed(
+                        e: GlideException?,
+                        model: Any?,
+                        target: Target<Drawable>,
+                        isFirstResource: Boolean
+                    ): Boolean {
+                        Log.e("GlideError", "Image load failed for URL: ${product.imageUrl}", e)
+                        return false // Return false to allow the error drawable to be shown
+                    }
+
+                    override fun onResourceReady(
+                        resource: Drawable,
+                        model: Any,
+                        target: Target<Drawable>,
+                        dataSource: DataSource,
+                        isFirstResource: Boolean
+                    ): Boolean {
+                        return false
+                    }
+                })
                 .into(binding.imageViewProduct)
 
-            // Setup nested RecyclerView for sellers
             setupSellersRecyclerView(product)
         }
 
         private fun setupSellersRecyclerView(product: Product) {
-            val sellerAdapter = SellerAdapter(product.sellers) { selectedSeller ->
-                // This callback runs when "Add to Cart" is clicked on a seller
+
+            val sellerAdapter = SellerAdapter { selectedSeller ->
                 val cartItem = CartItem(product = product, seller = selectedSeller)
                 Cart.addItem(cartItem)
 
@@ -56,6 +85,7 @@ class ProductAdapter : ListAdapter<Product, ProductAdapter.ProductViewHolder>(Pr
                 layoutManager = LinearLayoutManager(itemView.context, LinearLayoutManager.HORIZONTAL, false)
                 adapter = sellerAdapter
             }
+            sellerAdapter.submitList(product.sellers)
         }
     }
 }

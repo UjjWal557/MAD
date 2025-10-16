@@ -1,59 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="180dp"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardElevation="4dp"
+    app:cardElevation="2dp"
     app:strokeWidth="1dp"
-    app:strokeColor="@color/material_on_surface_stroke">
+    app:strokeColor="#E0E0E0">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="180dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="12dp">
 
         <TextView
-            android:id="@+id/sellerName"
+            android:id="@+id/textViewSellerName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Awesome Seller"
             android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="?android:attr/textColorPrimary"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Appario Retail" />
 
         <TextView
-            android:id="@+id/sellerPrice"
+            android:id="@+id/textViewPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="₹14,999"
-            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
             android:textColor="?attr/colorPrimary"
-            android:layout_marginTop="4dp"
-            app:layout_constraintTop_toBottomOf="@id/sellerName"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/textViewSellerName"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="₹79,999" />
 
         <TextView
-            android:id="@+id/sellerRating"
+            android:id="@+id/textViewRating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="⭐ 4.5"
-            android:layout_marginTop="4dp"
-            app:layout_constraintTop_toBottomOf="@id/sellerPrice"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_star"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/textViewPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="4.8 (1250)" />
+
+        <TextView
+            android:id="@+id/textViewDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_delivery"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/textViewRating"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Delivery in 2 days" />
+
+        <TextView
+            android:id="@+id/textViewTrusted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:text="Trusted Seller"
+            android:textColor="#388E3C"
+            android:visibility="gone"
+            app:drawableStartCompat="@drawable/ic_trusted"
+            tools:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/textViewDelivery"
             app:layout_constraintStart_toStartOf="parent"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonAddToCart"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:text="Add to Cart"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/sellerRating"
+            app:layout_constraintTop_toBottomOf="@id/textViewTrusted"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

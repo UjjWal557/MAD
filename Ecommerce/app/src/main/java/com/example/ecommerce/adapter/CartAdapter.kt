@@ -9,7 +9,6 @@ import com.bumptech.glide.Glide
 import com.example.ecommerce.databinding.ItemCartBinding
 import com.example.ecommerce.model.CartItem
 
-// Modify the constructor to accept a function
 class CartAdapter(
     private val onRemoveClicked: (CartItem) -> Unit
 ) : ListAdapter<CartItem, CartAdapter.CartViewHolder>(CartDiffCallback()) {

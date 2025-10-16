@@ -1,5 +1,6 @@
 package com.example.ecommerce
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -19,34 +20,33 @@ class CartActivity : AppCompatActivity() {
         binding = ActivityCartBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // We are removing the toolbar's back button as the bottom nav will handle navigation
-        // binding.toolbar.setNavigationOnClickListener {
-        //     onBackPressedDispatcher.onBackPressed()
-        // }
 
         setupRecyclerView()
-        setupBottomNavigation() // Add this call
+        setupBottomNavigation()
+        binding.deal.setOnClickListener {
+            Toast.makeText(this,"New deals not available",Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun onResume() {
         super.onResume()
         loadCartItems()
     }
-
-    // ADD THIS NEW FUNCTION
     private fun setupBottomNavigation() {
-        // This line ensures the "Cart" icon is highlighted when this activity is open
         binding.bottomNavigationView.selectedItemId = R.id.navigation_cart
 
         binding.bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigation_home -> {
-                    // Finish this activity to go back to the HomeActivity on the stack
+                    startActivity(Intent(this, HomeActivity::class.java))
                     finish()
                     true
                 }
                 R.id.navigation_cart -> {
-                    // We are already on the cart screen, do nothing
+                    true
+                }
+                R.id.navigation_profile ->{
+                    startActivity(Intent(this, ProfileActivity::class.java))
                     true
                 }
                 else -> false
