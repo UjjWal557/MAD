@@ -13,5 +13,3 @@
         android:icon="@drawable/ic_profile"
         android:title="Profile" />
 </menu>
-    <!-- Note: You will need to add vector assets for ic_home, ic_cart, etc. -->
-    <!-- In Android Studio: Right-click res/drawable -> New -> Vector Asset -->
