@@ -18,6 +18,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:scaleType="centerCrop"
+            android:contentDescription="@string/product_image"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:src="@tools:sample/avatars" />
@@ -28,6 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:textStyle="bold"
+            android:textSize="16sp"
             app:layout_constraintEnd_toStartOf="@+id/buttonRemove"
             app:layout_constraintStart_toEndOf="@id/productImage"
             app:layout_constraintTop_toTopOf="parent"
@@ -41,6 +43,7 @@
             android:textStyle="italic"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="@id/productName"
+            app:layout_constraintEnd_toStartOf="@id/buttonRemove"
             app:layout_constraintTop_toBottomOf="@id/productName"
             tools:text="Sold by: Awesome Seller" />
 
@@ -50,22 +53,97 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textColor="?attr/colorPrimary"
-            android:textSize="16sp"
+            android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@id/productName"
             app:layout_constraintTop_toBottomOf="@id/sellerName"
             tools:text="₹14,999" />
+
+        <TextView
+            android:id="@+id/multiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" × "
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/productPrice"
+            app:layout_constraintBaseline_toBaselineOf="@id/productPrice" />
+
+        <TextView
+            android:id="@+id/quantityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/multiply"
+            app:layout_constraintBaseline_toBaselineOf="@id/productPrice"
+            tools:text="2" />
+
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/productName"
+            app:layout_constraintTop_toBottomOf="@id/productPrice"
+            tools:text="Total: ₹29,998" />
+
+        <!-- Quantity Controls -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonDecrease"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:text="-"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@id/productName"
+            app:layout_constraintTop_toBottomOf="@id/totalPrice" />
+
+        <TextView
+            android:id="@+id/quantityDisplay"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/buttonDecrease"
+            app:layout_constraintEnd_toStartOf="@id/buttonIncrease"
+            app:layout_constraintTop_toTopOf="@id/buttonDecrease"
+            app:layout_constraintBottom_toBottomOf="@id/buttonDecrease"
+            tools:text="2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonIncrease"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:text="+"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/quantityDisplay"
+            app:layout_constraintTop_toTopOf="@id/buttonDecrease" />
 
         <ImageButton
             android:id="@+id/buttonRemove"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="Remove item from cart"
+            android:contentDescription="@string/remove_from_cart"
             android:src="@android:drawable/ic_menu_delete"
             app:tint="?android:attr/textColorSecondary"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

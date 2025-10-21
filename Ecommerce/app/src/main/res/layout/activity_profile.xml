@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:id="@+id/main"
     tools:context=".ProfileActivity">
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -13,42 +13,42 @@
         android:layout_height="120dp"
         android:layout_marginTop="32dp"
         android:padding="4dp"
-        android:scaleType="centerCrop"
+        android:scaleType="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
         app:strokeColor="?attr/colorPrimary"
-        app:strokeWidth="2dp"
-        tools:src="@tools:sample/avatars" />
+        app:strokeWidth="3dp"
+        app:srcCompat="@drawable/user" />
 
     <TextView
         android:id="@+id/textViewFullName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+        android:text="User Name"
+        android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profileImage"
-        tools:text="Alex Doe" />
+        app:layout_constraintTop_toBottomOf="@+id/profileImage"/>
 
     <TextView
         android:id="@+id/textViewUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
-        android:textColor="?android:attr/textColorSecondary"
+        android:text="\@alexdoe"
+        android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewFullName"
-        tools:text="\@alexdoe" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewFullName"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonEditProfile"
         style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
@@ -60,7 +60,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonSettings"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="Settings"
@@ -82,44 +82,51 @@
 
     <TextView
         android:id="@+id/textViewEmail"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_margin="25dp"
         android:drawableStart="@drawable/ic_email"
         android:drawablePadding="16dp"
         android:gravity="center_vertical"
-        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:text="alex.doe@example.com"
+        android:textSize="17sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/divider"
-        tools:text="alex.doe@example.com" />
+        app:layout_constraintTop_toBottomOf="@id/divider"/>
 
     <TextView
         android:id="@+id/textViewPhone"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_margin="25dp"
         android:drawableStart="@drawable/ic_phone"
         android:drawablePadding="16dp"
         android:gravity="center_vertical"
-        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:text="1234567890"
+        android:textSize="17sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewEmail"
-        tools:text="+1 (123) 456-7890" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail"/>
 
     <TextView
         android:id="@+id/textViewLocation"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_margin="25dp"
         android:drawableStart="@drawable/ic_location"
         android:drawablePadding="16dp"
         android:gravity="center_vertical"
-        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:text="Ganpat University"
+        android:textSize="17sp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPhone" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPhone"
-        tools:text="San Francisco, CA" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="unlabeled"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

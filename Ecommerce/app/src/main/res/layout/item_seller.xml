@@ -62,17 +62,14 @@
             tools:text="Delivery in 2 days" />
 
         <TextView
-            android:id="@+id/textViewTrusted"
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:drawablePadding="4dp"
             android:gravity="center_vertical"
-            android:text="Trusted Seller"
-            android:textColor="#388E3C"
-            android:visibility="gone"
+            android:text="Seller"
             app:drawableStartCompat="@drawable/ic_trusted"
-            tools:visibility="visible"
             app:layout_constraintTop_toBottomOf="@id/textViewDelivery"
             app:layout_constraintStart_toStartOf="parent"/>
 
@@ -82,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:text="Add to Cart"
-            app:layout_constraintTop_toBottomOf="@id/textViewTrusted"
+            app:layout_constraintTop_toBottomOf="@id/textView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 

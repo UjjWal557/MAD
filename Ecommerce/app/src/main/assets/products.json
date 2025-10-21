@@ -1,1202 +1,1534 @@
-[
-  {
-    "id": 1,
-    "name": "Samsung Galaxy S24",
-    "description": "The latest flagship from Samsung with AI-powered features, a stunning Dynamic AMOLED 2X display, and a pro-grade camera system.",
-    "imageUrl": "https://placehold.co/600x400/000000/FFFFFF?text=Galaxy+S24",
-    "sellers": [
-      {
-        "sellerName": "Appario Retail",
-        "price": 79999.00,
-        "rating": 4.8,
-        "feedbackCount": 1250,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "GadgetZone",
-        "price": 78500.00,
-        "rating": 4.7,
-        "feedbackCount": 890,
-        "isTrusted": false,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "Croma",
-        "price": 80499.00,
-        "rating": 4.9,
-        "feedbackCount": 2100,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "TechEmporium",
-        "price": 78999.00,
-        "rating": 4.6,
-        "feedbackCount": 950,
-        "isTrusted": true,
-        "deliveryDays": 2
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "name": "iPhone 15 Pro",
-    "description": "Features the powerful A17 Pro chip, a customizable Action button, and the most advanced Pro camera system ever on an iPhone.",
-    "imageUrl": "https://placehold.co/600x400/111111/FFFFFF?text=iPhone+15+Pro",
-    "sellers": [
-      {
-        "sellerName": "Appario Retail",
-        "price": 134900.00,
-        "rating": 4.9,
-        "feedbackCount": 3400,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "Unicorn Store",
-        "price": 135000.00,
-        "rating": 4.8,
-        "feedbackCount": 950,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "GlobalElectronics",
-        "price": 134500.00,
-        "rating": 4.8,
-        "feedbackCount": 1100,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "PrimeDeals",
-        "price": 135500.00,
-        "rating": 4.7,
-        "feedbackCount": 2500,
-        "isTrusted": false,
-        "deliveryDays": 3
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "name": "Google Pixel 8",
-    "description": "The helpful phone by Google, with an amazing camera that uses AI to create perfect photos and a clean Android experience.",
-    "imageUrl": "https://placehold.co/600x400/4285F4/FFFFFF?text=Pixel+8",
-    "sellers": [
-      {
-        "sellerName": "Flipkart Assured",
-        "price": 69999.00,
-        "rating": 4.6,
-        "feedbackCount": 1100,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "Reliance Digital",
-        "price": 71999.00,
-        "rating": 4.7,
-        "feedbackCount": 1800,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "GadgetGalaxy",
-        "price": 70500.00,
-        "rating": 4.5,
-        "feedbackCount": 900,
-        "isTrusted": true,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "QuickShipments",
-        "price": 69500.00,
-        "rating": 4.6,
-        "feedbackCount": 1300,
-        "isTrusted": false,
-        "deliveryDays": 2
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "name": "OnePlus 12",
-    "description": "A performance flagship with a Snapdragon 8 Gen 3 processor, Hasselblad camera, and super-fast 100W SUPERVOOC charging.",
-    "imageUrl": "https://placehold.co/600x400/F05248/FFFFFF?text=OnePlus+12",
-    "sellers": [
-      {
-        "sellerName": "OnePlus Official",
-        "price": 64999.00,
-        "rating": 4.8,
-        "feedbackCount": 2200,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "TechSeller",
-        "price": 63500.00,
-        "rating": 4.5,
-        "feedbackCount": 750,
-        "isTrusted": false,
-        "deliveryDays": 4
-      },
-      {
-        "sellerName": "Amazon",
-        "price": 64999.00,
-        "rating": 4.7,
-        "feedbackCount": 3500,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "ValueRetail",
-        "price": 63999.00,
-        "rating": 4.6,
-        "feedbackCount": 1100,
-        "isTrusted": true,
-        "deliveryDays": 3
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "name": "MacBook Air M2",
-    "description": "Incredibly thin and light, the MacBook Air is now supercharged by the M2 chip, delivering exceptional performance and up to 18 hours of battery life.",
-    "imageUrl": "https://placehold.co/600x400/888888/FFFFFF?text=MacBook+Air",
-    "sellers": [
-      {
-        "sellerName": "Appario Retail",
-        "price": 99900.00,
-        "rating": 4.9,
-        "feedbackCount": 1500,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "Imagine Store",
-        "price": 102900.00,
-        "rating": 4.8,
-        "feedbackCount": 600,
-        "isTrusted": true,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "Croma",
-        "price": 101900.00,
-        "rating": 4.9,
-        "feedbackCount": 850,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "DigitalWorld",
-        "price": 99500.00,
-        "rating": 4.7,
-        "feedbackCount": 1200,
-        "isTrusted": false,
-        "deliveryDays": 2
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "name": "Dell XPS 15",
-    "description": "A premium Windows laptop with a stunning 4K OLED display, powerful Intel Core i7 processor, and NVIDIA RTX graphics for creative professionals.",
-    "imageUrl": "https://placehold.co/600x400/007DB8/FFFFFF?text=Dell+XPS+15",
-    "sellers": [
-      {
-        "sellerName": "Dell India",
-        "price": 189990.00,
-        "rating": 4.7,
-        "feedbackCount": 450,
-        "isTrusted": true,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "Cloudtail India",
-        "price": 185000.00,
-        "rating": 4.8,
-        "feedbackCount": 980,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "ElectroHub",
-        "price": 186500.00,
-        "rating": 4.6,
-        "feedbackCount": 700,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "NextGenElectronics",
-        "price": 190500.00,
-        "rating": 4.7,
-        "feedbackCount": 300,
-        "isTrusted": true,
-        "deliveryDays": 4
-      }
-    ]
-  },
-  {
-    "id": 7,
-    "name": "Sony WH-1000XM5 Headphones",
-    "description": "Industry-leading noise-canceling headphones with exceptional sound quality, a lightweight design, and crystal-clear hands-free calling.",
-    "imageUrl": "https://placehold.co/600x400/333333/FFFFFF?text=Sony+XM5",
-    "sellers": [
-      {
-        "sellerName": "Sony Center",
-        "price": 29990.00,
-        "rating": 4.9,
-        "feedbackCount": 4500,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "Headphone Zone",
-        "price": 28990.00,
-        "rating": 4.8,
-        "feedbackCount": 1200,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "Appario Retail",
-        "price": 29490.00,
-        "rating": 4.9,
-        "feedbackCount": 5500,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "Croma",
-        "price": 29990.00,
-        "rating": 4.8,
-        "feedbackCount": 2100,
-        "isTrusted": true,
-        "deliveryDays": 1
-      }
-    ]
-  },
-  {
-    "id": 8,
-    "name": "Apple Watch Series 9",
-    "description": "Your essential companion for a healthy life is now even more powerful. Features a new S9 SiP, a brighter display, and a magical new way to interact.",
-    "imageUrl": "https://placehold.co/600x400/EAEAEA/000000?text=Apple+Watch+9",
-    "sellers": [
-      {
-        "sellerName": "Appario Retail",
-        "price": 41900.00,
-        "rating": 4.8,
-        "feedbackCount": 800,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "Imagine Store",
-        "price": 42500.00,
-        "rating": 4.9,
-        "feedbackCount": 550,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "Unicorn Store",
-        "price": 41990.00,
-        "rating": 4.8,
-        "feedbackCount": 600,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "Reliance Digital",
-        "price": 42900.00,
-        "rating": 4.7,
-        "feedbackCount": 950,
-        "isTrusted": true,
-        "deliveryDays": 1
-      }
-    ]
-  },
-  {
-    "id": 9,
-    "name": "Samsung Galaxy Watch 6",
-    "description": "Track your wellness with our biggest screen yet. Features advanced sleep coaching, heart rate monitoring, and a sleek, durable design.",
-    "imageUrl": "https://placehold.co/600x400/585858/FFFFFF?text=Galaxy+Watch+6",
-    "sellers": [
-      {
-        "sellerName": "Samsung Store",
-        "price": 29999.00,
-        "rating": 4.6,
-        "feedbackCount": 650,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "Croma",
-        "price": 30500.00,
-        "rating": 4.7,
-        "feedbackCount": 900,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "Appario Retail",
-        "price": 29500.00,
-        "rating": 4.7,
-        "feedbackCount": 1200,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "GadgetZone",
-        "price": 29900.00,
-        "rating": 4.5,
-        "feedbackCount": 500,
-        "isTrusted": false,
-        "deliveryDays": 3
-      }
-    ]
-  },
-  {
-    "id": 10,
-    "name": "Logitech MX Master 3S Mouse",
-    "description": "An iconic mouse, remastered. Experience ultimate comfort and performance with quiet clicks and an 8K DPI sensor for precision on any surface.",
-    "imageUrl": "https://placehold.co/600x400/0C0C0C/FFFFFF?text=MX+Master+3S",
-    "sellers": [
-      {
-        "sellerName": "Appario Retail",
-        "price": 9499.00,
-        "rating": 4.9,
-        "feedbackCount": 3200,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "MDComputers",
-        "price": 9200.00,
-        "rating": 4.8,
-        "feedbackCount": 800,
-        "isTrusted": true,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "TechEmporium",
-        "price": 9599.00,
-        "rating": 4.7,
-        "feedbackCount": 1500,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "UrbanTech",
-        "price": 9350.00,
-        "rating": 4.6,
-        "feedbackCount": 950,
-        "isTrusted": false,
-        "deliveryDays": 2
-      }
-    ]
-  },
-  {
-    "id": 11,
-    "name": "Anker PowerCore 10000",
-    "description": "One of the smallest and lightest 10,000mAh portable chargers. Provides almost three-and-a-half iPhone charges or two-and-a-half Galaxy S8 charges.",
-    "imageUrl": "https://placehold.co/600x400/1E3A8A/FFFFFF?text=Anker+PowerCore",
-    "sellers": [
-      {
-        "sellerName": "AnkerDirect",
-        "price": 2199.00,
-        "rating": 4.8,
-        "feedbackCount": 15000,
-        "isTrusted": true,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "Appario Retail",
-        "price": 2099.00,
-        "rating": 4.7,
-        "feedbackCount": 25000,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "GlobalElectronics",
-        "price": 2249.00,
-        "rating": 4.6,
-        "feedbackCount": 12000,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "ValueRetail",
-        "price": 1999.00,
-        "rating": 4.5,
-        "feedbackCount": 18000,
-        "isTrusted": false,
-        "deliveryDays": 4
-      }
-    ]
-  },
-  {
-    "id": 12,
-    "name": "Keychron K2 Mechanical Keyboard",
-    "description": "A popular 75% layout wireless mechanical keyboard with Mac and Windows compatibility. Features Gateron G Pro switches and customizable RGB backlighting.",
-    "imageUrl": "https://placehold.co/600x400/4B5563/FFFFFF?text=Keychron+K2",
-    "sellers": [
-      {
-        "sellerName": "MechaKeys",
-        "price": 7899.00,
-        "rating": 4.9,
-        "feedbackCount": 500,
-        "isTrusted": true,
-        "deliveryDays": 4
-      },
-      {
-        "sellerName": "Keychron India",
-        "price": 8299.00,
-        "rating": 4.9,
-        "feedbackCount": 700,
-        "isTrusted": true,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "MDComputers",
-        "price": 7999.00,
-        "rating": 4.8,
-        "feedbackCount": 450,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "TechEmporium",
-        "price": 7799.00,
-        "rating": 4.7,
-        "feedbackCount": 300,
-        "isTrusted": false,
-        "deliveryDays": 5
-      }
-    ]
-  },
-  {
-    "id": 13,
-    "name": "LG C3 55-inch OLED TV",
-    "description": "Experience perfect blacks and infinite contrast with the LG OLED C3. The a9 AI Processor Gen6 provides stunning picture and sound quality.",
-    "imageUrl": "https://placehold.co/600x400/222222/FFFFFF?text=LG+OLED+TV",
-    "sellers": [
-      {
-        "sellerName": "LG India",
-        "price": 149990.00,
-        "rating": 4.9,
-        "feedbackCount": 250,
-        "isTrusted": true,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "Reliance Digital",
-        "price": 152000.00,
-        "rating": 4.8,
-        "feedbackCount": 400,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "Croma",
-        "price": 151500.00,
-        "rating": 4.8,
-        "feedbackCount": 350,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "PrimeDeals",
-        "price": 148990.00,
-        "rating": 4.7,
-        "feedbackCount": 500,
-        "isTrusted": false,
-        "deliveryDays": 4
-      }
-    ]
-  },
-  {
-    "id": 14,
-    "name": "GoPro HERO12 Black",
-    "description": "The most versatile camera in the world, now with incredible image quality, even better HyperSmooth video stabilization and a huge boost in battery life.",
-    "imageUrl": "https://placehold.co/600x400/00AEEF/FFFFFF?text=GoPro+HERO12",
-    "sellers": [
-      {
-        "sellerName": "Appario Retail",
-        "price": 45000.00,
-        "rating": 4.7,
-        "feedbackCount": 300,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "GoPro India",
-        "price": 46500.00,
-        "rating": 4.8,
-        "feedbackCount": 250,
-        "isTrusted": true,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "GadgetGalaxy",
-        "price": 44500.00,
-        "rating": 4.6,
-        "feedbackCount": 400,
-        "isTrusted": false,
-        "deliveryDays": 4
-      },
-      {
-        "sellerName": "UrbanTech",
-        "price": 45500.00,
-        "rating": 4.7,
-        "feedbackCount": 200,
-        "isTrusted": true,
-        "deliveryDays": 1
-      }
-    ]
-  },
-  {
-    "id": 15,
-    "name": "Kindle Paperwhite (16 GB)",
-    "description": "Now with a 6.8\" display and thinner borders, adjustable warm light, up to 10 weeks of battery life, and 20% faster page turns.",
-    "imageUrl": "https://placehold.co/600x400/FF9900/000000?text=Kindle",
-    "sellers": [
-      {
-        "sellerName": "Amazon",
-        "price": 13999.00,
-        "rating": 4.8,
-        "feedbackCount": 25000,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "Appario Retail",
-        "price": 13899.00,
-        "rating": 4.8,
-        "feedbackCount": 18000,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "Cloudtail India",
-        "price": 14099.00,
-        "rating": 4.7,
-        "feedbackCount": 22000,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "ValueRetail",
-        "price": 13799.00,
-        "rating": 4.6,
-        "feedbackCount": 15000,
-        "isTrusted": false,
-        "deliveryDays": 3
-      }
-    ]
-  },
-  {
-    "id": 16,
-    "name": "Sony PlayStation 5",
-    "description": "Experience lightning-fast loading with an ultra-high-speed SSD, deeper immersion with support for haptic feedback, adaptive triggers, and 3D Audio.",
-    "imageUrl": "https://placehold.co/600x400/0070D1/FFFFFF?text=PS5",
-    "sellers": [
-      {
-        "sellerName": "Sony Center",
-        "price": 54990.00,
-        "rating": 4.9,
-        "feedbackCount": 5000,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "Games The Shop",
-        "price": 54500.00,
-        "rating": 4.8,
-        "feedbackCount": 1200,
-        "isTrusted": true,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "Reliance Digital",
-        "price": 55000.00,
-        "rating": 4.8,
-        "feedbackCount": 2500,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "Amazon",
-        "price": 54990.00,
-        "rating": 4.9,
-        "feedbackCount": 7000,
-        "isTrusted": true,
-        "deliveryDays": 2
-      }
-    ]
-  },
-  {
-    "id": 17,
-    "name": "Nintendo Switch OLED",
-    "description": "Features a vibrant 7-inch OLED screen, a wide adjustable stand, a dock with a wired LAN port, 64 GB of internal storage, and enhanced audio.",
-    "imageUrl": "https://placehold.co/600x400/E60012/FFFFFF?text=Nintendo+Switch",
-    "sellers": [
-      {
-        "sellerName": "MX2Games",
-        "price": 29499.00,
-        "rating": 4.7,
-        "feedbackCount": 850,
-        "isTrusted": false,
-        "deliveryDays": 5
-      },
-      {
-        "sellerName": "Games The Shop",
-        "price": 30500.00,
-        "rating": 4.8,
-        "feedbackCount": 600,
-        "isTrusted": true,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "ElectroHub",
-        "price": 28999.00,
-        "rating": 4.6,
-        "feedbackCount": 1100,
-        "isTrusted": false,
-        "deliveryDays": 4
-      },
-      {
-        "sellerName": "GlobalElectronics",
-        "price": 29990.00,
-        "rating": 4.7,
-        "feedbackCount": 950,
-        "isTrusted": true,
-        "deliveryDays": 2
-      }
-    ]
-  },
-  {
-    "id": 18,
-    "name": "Bose QuietComfort Ultra Earbuds",
-    "description": "World-class noise cancellation, now with Immersive Audio for sound that feels more real. CustomTune technology personalizes the sound to your ears.",
-    "imageUrl": "https://placehold.co/600x400/666666/FFFFFF?text=Bose+QC+Ultra",
-    "sellers": [
-      {
-        "sellerName": "Bose India",
-        "price": 25900.00,
-        "rating": 4.7,
-        "feedbackCount": 1100,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "Appario Retail",
-        "price": 24990.00,
-        "rating": 4.8,
-        "feedbackCount": 1500,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "Headphone Zone",
-        "price": 25500.00,
-        "rating": 4.9,
-        "feedbackCount": 900,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "Croma",
-        "price": 25990.00,
-        "rating": 4.7,
-        "feedbackCount": 1300,
-        "isTrusted": true,
-        "deliveryDays": 1
-      }
-    ]
-  },
-  {
-    "id": 19,
-    "name": "Samsung 27\" Odyssey G7 Monitor",
-    "description": "A 240Hz, 1ms gaming monitor with a 1000R curved QLED screen, providing ultimate immersion and picture quality for serious gamers.",
-    "imageUrl": "https://placehold.co/600x400/7B2CBF/FFFFFF?text=Odyssey+G7",
-    "sellers": [
-      {
-        "sellerName": "Samsung Store",
-        "price": 45000.00,
-        "rating": 4.6,
-        "feedbackCount": 450,
-        "isTrusted": true,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "MDComputers",
-        "price": 43500.00,
-        "rating": 4.7,
-        "feedbackCount": 600,
-        "isTrusted": true,
-        "deliveryDays": 4
-      },
-      {
-        "sellerName": "Appario Retail",
-        "price": 44500.00,
-        "rating": 4.8,
-        "feedbackCount": 800,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "ValueRetail",
-        "price": 42999.00,
-        "rating": 4.5,
-        "feedbackCount": 550,
-        "isTrusted": false,
-        "deliveryDays": 5
-      }
-    ]
-  },
-  {
-    "id": 20,
-    "name": "DJI Mini 4 Pro Drone",
-    "description": "Mini to the max. An advanced mini camera drone featuring powerful imaging capabilities, omnidirectional obstacle sensing, and a lightweight, foldable design.",
-    "imageUrl": "https://placehold.co/600x400/D1D5DB/000000?text=DJI+Mini+4",
-    "sellers": [
-      {
-        "sellerName": "Appario Retail",
-        "price": 109990.00,
-        "rating": 4.9,
-        "feedbackCount": 150,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "DJI Official",
-        "price": 112000.00,
-        "rating": 4.9,
-        "feedbackCount": 100,
-        "isTrusted": true,
-        "deliveryDays": 4
-      },
-      {
-        "sellerName": "UrbanTech",
-        "price": 108500.00,
-        "rating": 4.8,
-        "feedbackCount": 200,
-        "isTrusted": false,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "GadgetGalaxy",
-        "price": 110500.00,
-        "rating": 4.7,
-        "feedbackCount": 120,
-        "isTrusted": true,
-        "deliveryDays": 2
-      }
-    ]
-  },
-  {
-    "id": 21,
-    "name": "boAt Airdopes 141",
-    "description": "Enjoy an extended break on weekends with your favourite episodes on stream, virtue of a playback time of up to 42 hours including the 6 hours nonstop playtime for earbuds.",
-    "imageUrl": "https://placehold.co/600x400/0000FF/FFFFFF?text=boAt+Airdopes",
-    "sellers": [
-      {
-        "sellerName": "Appario Retail",
-        "price": 1299.00,
-        "rating": 4.1,
-        "feedbackCount": 150000,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "boAt Official",
-        "price": 1499.00,
-        "rating": 4.2,
-        "feedbackCount": 80000,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "Flipkart Assured",
-        "price": 1349.00,
-        "rating": 4.1,
-        "feedbackCount": 120000,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "ValueRetail",
-        "price": 1199.00,
-        "rating": 4.0,
-        "feedbackCount": 95000,
-        "isTrusted": false,
-        "deliveryDays": 3
-      }
-    ]
-  },
-  {
-    "id": 22,
-    "name": "Microsoft Surface Laptop 5",
-    "description": "Blazing-fast performance and sleek portability in a premium laptop with a vibrant PixelSense touchscreen and an exceptional typing experience.",
-    "imageUrl": "https://placehold.co/600x400/00A4EF/FFFFFF?text=Surface+Laptop+5",
-    "sellers": [
-      {
-        "sellerName": "Microsoft Store",
-        "price": 104999.00,
-        "rating": 4.8,
-        "feedbackCount": 350,
-        "isTrusted": true,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "Reliance Digital",
-        "price": 105999.00,
-        "rating": 4.7,
-        "feedbackCount": 450,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "Appario Retail",
-        "price": 102999.00,
-        "rating": 4.8,
-        "feedbackCount": 600,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "NextGenElectronics",
-        "price": 103500.00,
-        "rating": 4.6,
-        "feedbackCount": 250,
-        "isTrusted": false,
-        "deliveryDays": 4
-      }
-    ]
-  },
-  {
-    "id": 23,
-    "name": "Amazon Echo Dot (5th Gen)",
-    "description": "Our most popular smart speaker with Alexa. The sleek, compact design delivers crisp vocals and balanced bass for full sound.",
-    "imageUrl": "https://placehold.co/600x400/232F3E/FFFFFF?text=Echo+Dot",
-    "sellers": [
-      {
-        "sellerName": "Amazon",
-        "price": 4499.00,
-        "rating": 4.6,
-        "feedbackCount": 85000,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "Appario Retail",
-        "price": 4399.00,
-        "rating": 4.7,
-        "feedbackCount": 65000,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "Croma",
-        "price": 4499.00,
-        "rating": 4.5,
-        "feedbackCount": 12000,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "GlobalElectronics",
-        "price": 4299.00,
-        "rating": 4.4,
-        "feedbackCount": 25000,
-        "isTrusted": false,
-        "deliveryDays": 3
-      }
-    ]
-  },
-  {
-    "id": 24,
-    "name": "Samsung Galaxy Tab S9",
-    "description": "The ultimate tablet for work and play, featuring a stunning Dynamic AMOLED 2X display, S Pen included, and powerful performance.",
-    "imageUrl": "https://placehold.co/600x400/B5B5B5/000000?text=Tab+S9",
-    "sellers": [
-      {
-        "sellerName": "Samsung Store",
-        "price": 72999.00,
-        "rating": 4.8,
-        "feedbackCount": 800,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "Appario Retail",
-        "price": 71999.00,
-        "rating": 4.9,
-        "feedbackCount": 1100,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "Croma",
-        "price": 73499.00,
-        "rating": 4.7,
-        "feedbackCount": 950,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "Reliance Digital",
-        "price": 73999.00,
-        "rating": 4.8,
-        "feedbackCount": 1200,
-        "isTrusted": true,
-        "deliveryDays": 2
-      }
-    ]
-  },
-  {
-    "id": 25,
-    "name": "Xbox Series X",
-    "description": "The fastest, most powerful Xbox ever. Explore rich new worlds with 12 teraflops of raw graphic processing power, DirectX ray tracing, and a custom SSD.",
-    "imageUrl": "https://placehold.co/600x400/107C10/FFFFFF?text=Xbox+Series+X",
-    "sellers": [
-      {
-        "sellerName": "Amazon",
-        "price": 49990.00,
-        "rating": 4.9,
-        "feedbackCount": 4500,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "Games The Shop",
-        "price": 49500.00,
-        "rating": 4.8,
-        "feedbackCount": 900,
-        "isTrusted": true,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "Flipkart Assured",
-        "price": 50990.00,
-        "rating": 4.7,
-        "feedbackCount": 3500,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "GadgetGalaxy",
-        "price": 48999.00,
-        "rating": 4.6,
-        "feedbackCount": 1200,
-        "isTrusted": false,
-        "deliveryDays": 4
-      }
-    ]
-  },
-  {
-    "id": 26,
-    "name": "Fitbit Charge 6",
-    "description": "The essential fitness tracker with Google apps, heart rate on equipment, and 7 days of battery life to help you stay on track.",
-    "imageUrl": "https://placehold.co/600x400/E86C6A/FFFFFF?text=Fitbit+Charge+6",
-    "sellers": [
-      {
-        "sellerName": "Appario Retail",
-        "price": 14999.00,
-        "rating": 4.6,
-        "feedbackCount": 1200,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "Fitbit India",
-        "price": 15499.00,
-        "rating": 4.7,
-        "feedbackCount": 800,
-        "isTrusted": true,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "Croma",
-        "price": 14999.00,
-        "rating": 4.5,
-        "feedbackCount": 950,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "UrbanTech",
-        "price": 14500.00,
-        "rating": 4.4,
-        "feedbackCount": 1500,
-        "isTrusted": false,
-        "deliveryDays": 2
-      }
-    ]
-  },
-  {
-    "id": 27,
-    "name": "Logitech C920 Webcam",
-    "description": "Full HD 1080p video calling and recording with stereo audio. The perfect webcam for Skype, FaceTime, and YouTube.",
-    "imageUrl": "https://placehold.co/600x400/3D3D3D/FFFFFF?text=Logitech+C920",
-    "sellers": [
-      {
-        "sellerName": "Appario Retail",
-        "price": 7995.00,
-        "rating": 4.8,
-        "feedbackCount": 25000,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "MDComputers",
-        "price": 7800.00,
-        "rating": 4.7,
-        "feedbackCount": 5000,
-        "isTrusted": true,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "TechEmporium",
-        "price": 8100.00,
-        "rating": 4.6,
-        "feedbackCount": 12000,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "DigitalWorld",
-        "price": 7500.00,
-        "rating": 4.5,
-        "feedbackCount": 18000,
-        "isTrusted": false,
-        "deliveryDays": 4
-      }
-    ]
-  },
-  {
-    "id": 28,
-    "name": "Philips Hue Starter Kit",
-    "description": "Smart lighting made easy. Includes 4 smart bulbs with white and color ambiance and the Hue Bridge to control your lights from anywhere.",
-    "imageUrl": "https://placehold.co/600x400/FFC93E/000000?text=Philips+Hue",
-    "sellers": [
-      {
-        "sellerName": "Appario Retail",
-        "price": 14999.00,
-        "rating": 4.9,
-        "feedbackCount": 4000,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "Philips Store",
-        "price": 15999.00,
-        "rating": 4.8,
-        "feedbackCount": 2500,
-        "isTrusted": true,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "Croma",
-        "price": 15499.00,
-        "rating": 4.7,
-        "feedbackCount": 1800,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "ElectroHub",
-        "price": 14500.00,
-        "rating": 4.6,
-        "feedbackCount": 3200,
-        "isTrusted": false,
-        "deliveryDays": 2
-      }
-    ]
-  },
-  {
-    "id": 29,
-    "name": "Canon EOS R6 Mark II Camera",
-    "description": "A full-frame mirrorless camera for hybrid shooters. Delivers stunning photos and 4K 60p video with advanced subject tracking and in-body image stabilization.",
-    "imageUrl": "https://placehold.co/600x400/D90000/FFFFFF?text=Canon+R6+II",
-    "sellers": [
-      {
-        "sellerName": "Appario Retail",
-        "price": 243990.00,
-        "rating": 4.9,
-        "feedbackCount": 150,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "Canon India",
-        "price": 249990.00,
-        "rating": 5.0,
-        "feedbackCount": 100,
-        "isTrusted": true,
-        "deliveryDays": 4
-      },
-      {
-        "sellerName": "GadgetGalaxy",
-        "price": 240000.00,
-        "rating": 4.8,
-        "feedbackCount": 200,
-        "isTrusted": true,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "PrimeDeals",
-        "price": 239990.00,
-        "rating": 4.7,
-        "feedbackCount": 250,
-        "isTrusted": false,
-        "deliveryDays": 3
-      }
-    ]
-  },
-  {
-    "id": 30,
-    "name": "iRobot Roomba j7+",
-    "description": "The robot vacuum that identifies and avoids obstacles like pet waste and charging cords. It empties itself into an enclosed bag, so you don't have to think about vacuuming for months.",
-    "imageUrl": "https://placehold.co/600x400/5C6AC4/FFFFFF?text=Roomba+j7+",
-    "sellers": [
-      {
-        "sellerName": "iRobot India",
-        "price": 69900.00,
-        "rating": 4.7,
-        "feedbackCount": 500,
-        "isTrusted": true,
-        "deliveryDays": 3
-      },
-      {
-        "sellerName": "Appario Retail",
-        "price": 68500.00,
-        "rating": 4.8,
-        "feedbackCount": 800,
-        "isTrusted": true,
-        "deliveryDays": 1
-      },
-      {
-        "sellerName": "Croma",
-        "price": 70900.00,
-        "rating": 4.6,
-        "feedbackCount": 650,
-        "isTrusted": true,
-        "deliveryDays": 2
-      },
-      {
-        "sellerName": "Reliance Digital",
-        "price": 71900.00,
-        "rating": 4.7,
-        "feedbackCount": 700,
-        "isTrusted": true,
-        "deliveryDays": 2
-      }
-    ]
-  }
-]
+{
+  "products": [
+    {
+      "product_id": "samsung_galaxy_s24",
+      "product_name": "Samsung Galaxy S24",
+      "brand": "Samsung",
+      "base_image_url": "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=800&q=80",
+      "description": "The latest flagship from Samsung with AI-powered features, a stunning Dynamic AMOLED 2X display, and a pro-grade camera system.",
+      "variants": [
+        {
+          "variant_id": "s24_8_256",
+          "specifications": {
+            "Configuration": "8GB|256GB"
+          },
+          "offers": [
+            {
+              "seller_name": "Appario Retail",
+              "price": 79999.0,
+              "rating": 4.8,
+              "rating_count": 1250,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "GadgetZone",
+              "price": 78500.0,
+              "rating": 4.7,
+              "rating_count": 890,
+              "delivery_in_days": 3,
+              "is_trusted_seller": false
+            }
+          ]
+        },
+        {
+          "variant_id": "s24_12_512",
+          "specifications": {
+            "Configuration": "12GB|512GB"
+          },
+          "offers": [
+            {
+              "seller_name": "Croma",
+              "price": 92499.0,
+              "rating": 4.9,
+              "rating_count": 2100,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "TechEmporium",
+              "price": 91999.0,
+              "rating": 4.6,
+              "rating_count": 950,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "iphone_15_pro",
+      "product_name": "iPhone 15 Pro",
+      "brand": "Apple",
+      "base_image_url": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=800&q=80",
+      "description": "Features the powerful A17 Pro chip, a customizable Action button, and the most advanced Pro camera system ever on an iPhone.",
+      "variants": [
+        {
+          "variant_id": "ip15p_256_blu",
+          "specifications": {
+            "Storage": "256GB",
+            "Color": "Blue Titanium",
+            "Configuration": "8GB|256GB"
+          },
+          "offers": [
+            {
+              "seller_name": "Appario Retail",
+              "price": 134900.0,
+              "rating": 4.9,
+              "rating_count": 3400,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Unicorn Store",
+              "price": 135000.0,
+              "rating": 4.8,
+              "rating_count": 950,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            }
+          ]
+        },
+        {
+          "variant_id": "ip15p_512_wht",
+          "specifications": {
+            "Storage": "512GB",
+            "Color": "White Titanium",
+            "Configuration": "8GB|256GB"
+          },
+          "offers": [
+            {
+              "seller_name": "GlobalElectronics",
+              "price": 154500.0,
+              "rating": 4.8,
+              "rating_count": 1100,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "PrimeDeals",
+              "price": 155500.0,
+              "rating": 4.7,
+              "rating_count": 2500,
+              "delivery_in_days": 3,
+              "is_trusted_seller": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "google_pixel_8",
+      "product_name": "Google Pixel 8",
+      "brand": "Google",
+      "base_image_url": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800&q=80",
+      "description": "The helpful phone by Google, with an amazing camera that uses AI to create perfect photos and a clean Android experience.",
+      "variants": [
+        {
+          "variant_id": "px8_128",
+          "specifications": {
+            "Storage": "128GB",
+            "Configuration": "8GB|256GB"
+          },
+          "offers": [
+            {
+              "seller_name": "Flipkart Assured",
+              "price": 69999.0,
+              "rating": 4.6,
+              "rating_count": 1100,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Reliance Digital",
+              "price": 71999.0,
+              "rating": 4.7,
+              "rating_count": 1800,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            }
+          ]
+        },
+        {
+          "variant_id": "px8_256",
+          "specifications": {
+            "Storage": "256GB",
+            "Configuration": "8GB|256GB"
+          },
+          "offers": [
+            {
+              "seller_name": "GadgetGalaxy",
+              "price": 78500.0,
+              "rating": 4.5,
+              "rating_count": 900,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "QuickShipments",
+              "price": 77500.0,
+              "rating": 4.6,
+              "rating_count": 1300,
+              "delivery_in_days": 2,
+              "is_trusted_seller": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "oneplus_12",
+      "product_name": "OnePlus 12",
+      "brand": "OnePlus",
+      "base_image_url": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&q=80",
+      "description": "A performance flagship with a Snapdragon 8 Gen 3 processor, Hasselblad camera, and super-fast 100W SUPERVOOC charging.",
+      "variants": [
+        {
+          "variant_id": "op12_default",
+          "specifications": {
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "OnePlus Official",
+              "price": 64999.0,
+              "rating": 4.8,
+              "rating_count": 2200,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "TechSeller",
+              "price": 63500.0,
+              "rating": 4.5,
+              "rating_count": 750,
+              "delivery_in_days": 4,
+              "is_trusted_seller": false
+            },
+            {
+              "seller_name": "Amazon",
+              "price": 64999.0,
+              "rating": 4.7,
+              "rating_count": 3500,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "ValueRetail",
+              "price": 63999.0,
+              "rating": 4.6,
+              "rating_count": 1100,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "macbook_air_m2",
+      "product_name": "MacBook Air M2",
+      "brand": "Apple",
+      "base_image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&q=80",
+      "description": "Incredibly thin and light, the MacBook Air is now supercharged by the M2 chip, delivering exceptional performance and up to 18 hours of battery life.",
+      "variants": [
+        {
+          "variant_id": "mba_m2_8_256",
+          "specifications": {
+            "Configuration": "8GB|256GBSSD"
+          },
+          "offers": [
+            {
+              "seller_name": "Appario Retail",
+              "price": 99900.0,
+              "rating": 4.9,
+              "rating_count": 1500,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "DigitalWorld",
+              "price": 99500.0,
+              "rating": 4.7,
+              "rating_count": 1200,
+              "delivery_in_days": 2,
+              "is_trusted_seller": false
+            }
+          ]
+        },
+        {
+          "variant_id": "mba_m2_16_512",
+          "specifications": {
+            "Configuration": "16GB|512GBSSD"
+          },
+          "offers": [
+            {
+              "seller_name": "Imagine Store",
+              "price": 122900.0,
+              "rating": 4.8,
+              "rating_count": 600,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Croma",
+              "price": 121900.0,
+              "rating": 4.9,
+              "rating_count": 850,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "dell_xps_15",
+      "product_name": "Dell XPS 15",
+      "brand": "Dell",
+      "base_image_url": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=800&q=80",
+      "description": "A premium Windows laptop with a stunning 4K OLED display, powerful Intel Core i7 processor, and NVIDIA RTX graphics for creative professionals.",
+      "variants": [
+        {
+          "variant_id": "xps15_default",
+          "specifications": {
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Dell India",
+              "price": 189990.0,
+              "rating": 4.7,
+              "rating_count": 450,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Cloudtail India",
+              "price": 185000.0,
+              "rating": 4.8,
+              "rating_count": 980,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "ElectroHub",
+              "price": 186500.0,
+              "rating": 4.6,
+              "rating_count": 700,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "NextGenElectronics",
+              "price": 190500.0,
+              "rating": 4.7,
+              "rating_count": 300,
+              "delivery_in_days": 4,
+              "is_trusted_seller": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "sony_wh_1000xm5",
+      "product_name": "Sony WH-1000XM5 Headphones",
+      "brand": "Sony",
+      "base_image_url": "https://images.unsplash.com/photo-1545127398-14699f92334b?w=800&q=80",
+      "description": "Industry-leading noise-canceling headphones with exceptional sound quality, a lightweight design, and crystal-clear hands-free calling.",
+      "variants": [
+        {
+          "variant_id": "sony_xm5_default",
+          "specifications": {
+            "Type": "Over-Ear",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Sony Center",
+              "price": 29990.0,
+              "rating": 4.9,
+              "rating_count": 4500,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Headphone Zone",
+              "price": 28990.0,
+              "rating": 4.8,
+              "rating_count": 1200,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Appario Retail",
+              "price": 29490.0,
+              "rating": 4.9,
+              "rating_count": 5500,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Croma",
+              "price": 29990.0,
+              "rating": 4.8,
+              "rating_count": 2100,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "apple_watch_9",
+      "product_name": "Apple Watch Series 9",
+      "brand": "Apple",
+      "base_image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&q=80",
+      "description": "Your essential companion for a healthy life is now even more powerful. Features a new S9 SiP, a brighter display, and a magical new way to interact.",
+      "variants": [
+        {
+          "variant_id": "aw9_default",
+          "specifications": {
+            "Size": "45mm",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Appario Retail",
+              "price": 41900.0,
+              "rating": 4.8,
+              "rating_count": 800,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Imagine Store",
+              "price": 42500.0,
+              "rating": 4.9,
+              "rating_count": 550,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Unicorn Store",
+              "price": 41990.0,
+              "rating": 4.8,
+              "rating_count": 600,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Reliance Digital",
+              "price": 42900.0,
+              "rating": 4.7,
+              "rating_count": 950,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "samsung_galaxy_watch_6",
+      "product_name": "Samsung Galaxy Watch 6",
+      "brand": "Samsung",
+      "base_image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&q=80",
+      "description": "Track your wellness with our biggest screen yet. Features advanced sleep coaching, heart rate monitoring, and a sleek, durable design.",
+      "variants": [
+        {
+          "variant_id": "gw6_default",
+          "specifications": {
+            "Size": "44mm",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Samsung Store",
+              "price": 29999.0,
+              "rating": 4.6,
+              "rating_count": 650,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Croma",
+              "price": 30500.0,
+              "rating": 4.7,
+              "rating_count": 900,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Appario Retail",
+              "price": 29500.0,
+              "rating": 4.7,
+              "rating_count": 1200,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "GadgetZone",
+              "price": 29900.0,
+              "rating": 4.5,
+              "rating_count": 500,
+              "delivery_in_days": 3,
+              "is_trusted_seller": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "logitech_mx_master_3s",
+      "product_name": "Logitech MX Master 3S Mouse",
+      "brand": "Logitech",
+      "base_image_url": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800&q=80",
+      "description": "An iconic mouse, remastered. Experience ultimate comfort and performance with quiet clicks and an 8K DPI sensor for precision on any surface.",
+      "variants": [
+        {
+          "variant_id": "mx3s_default",
+          "specifications": {
+            "Type": "Wireless Mouse",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Appario Retail",
+              "price": 9499.0,
+              "rating": 4.9,
+              "rating_count": 3200,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "MDComputers",
+              "price": 9200.0,
+              "rating": 4.8,
+              "rating_count": 800,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "TechEmporium",
+              "price": 9599.0,
+              "rating": 4.7,
+              "rating_count": 1500,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "UrbanTech",
+              "price": 9350.0,
+              "rating": 4.6,
+              "rating_count": 950,
+              "delivery_in_days": 2,
+              "is_trusted_seller": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "anker_powercore_10000",
+      "product_name": "Anker PowerCore 10000",
+      "brand": "Anker",
+      "base_image_url": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5",
+      "description": "One of the smallest and lightest 10,000mAh portable chargers. Provides almost three-and-a-half iPhone charges or two-and-a-half Galaxy S8 charges.",
+      "variants": [
+        {
+          "variant_id": "anker_pc_10k_default",
+          "specifications": {
+            "Capacity": "10000mAh",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "AnkerDirect",
+              "price": 2199.0,
+              "rating": 4.8,
+              "rating_count": 15000,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Appario Retail",
+              "price": 2099.0,
+              "rating": 4.7,
+              "rating_count": 25000,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "GlobalElectronics",
+              "price": 2249.0,
+              "rating": 4.6,
+              "rating_count": 12000,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "ValueRetail",
+              "price": 1999.0,
+              "rating": 4.5,
+              "rating_count": 18000,
+              "delivery_in_days": 4,
+              "is_trusted_seller": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "keychron_k2",
+      "product_name": "Keychron K2 Mechanical Keyboard",
+      "brand": "Keychron",
+      "base_image_url": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&q=80",
+      "description": "A popular 75% layout wireless mechanical keyboard with Mac and Windows compatibility. Features Gateron G Pro switches and customizable RGB backlighting.",
+      "variants": [
+        {
+          "variant_id": "k2_default",
+          "specifications": {
+            "Layout": "75%",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "MechaKeys",
+              "price": 7899.0,
+              "rating": 4.9,
+              "rating_count": 500,
+              "delivery_in_days": 4,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Keychron India",
+              "price": 8299.0,
+              "rating": 4.9,
+              "rating_count": 700,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "MDComputers",
+              "price": 7999.0,
+              "rating": 4.8,
+              "rating_count": 450,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "TechEmporium",
+              "price": 7799.0,
+              "rating": 4.7,
+              "rating_count": 300,
+              "delivery_in_days": 5,
+              "is_trusted_seller": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "lg_c3_55_oled",
+      "product_name": "LG C3 55-inch OLED TV",
+      "brand": "LG",
+      "base_image_url": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=800&q=80",
+      "description": "Experience perfect blacks and infinite contrast with the LG OLED C3. The a9 AI Processor Gen6 provides stunning picture and sound quality.",
+      "variants": [
+        {
+          "variant_id": "lg_c3_55_default",
+          "specifications": {
+            "Size": "55-inch",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "LG India",
+              "price": 149990.0,
+              "rating": 4.9,
+              "rating_count": 250,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Reliance Digital",
+              "price": 152000.0,
+              "rating": 4.8,
+              "rating_count": 400,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Croma",
+              "price": 151500.0,
+              "rating": 4.8,
+              "rating_count": 350,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "PrimeDeals",
+              "price": 148990.0,
+              "rating": 4.7,
+              "rating_count": 500,
+              "delivery_in_days": 4,
+              "is_trusted_seller": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "gopro_hero12",
+      "product_name": "GoPro HERO12 Black",
+      "brand": "GoPro",
+      "base_image_url": "https://unsplash.com/photos/black-gopro-max-camera-Rjf6Sse42kA",
+      "description": "The most versatile camera in the world, now with incredible image quality, even better HyperSmooth video stabilization and a huge boost in battery life.",
+      "variants": [
+        {
+          "variant_id": "hero12_default",
+          "specifications": {
+            "Type": "Action Camera",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Appario Retail",
+              "price": 45000.0,
+              "rating": 4.7,
+              "rating_count": 300,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "GoPro India",
+              "price": 46500.0,
+              "rating": 4.8,
+              "rating_count": 250,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "GadgetGalaxy",
+              "price": 44500.0,
+              "rating": 4.6,
+              "rating_count": 400,
+              "delivery_in_days": 4,
+              "is_trusted_seller": false
+            },
+            {
+              "seller_name": "UrbanTech",
+              "price": 45500.0,
+              "rating": 4.7,
+              "rating_count": 200,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "kindle_paperwhite_16gb",
+      "product_name": "Kindle Paperwhite (16 GB)",
+      "brand": "Amazon",
+      "base_image_url": "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=800&q=80",
+      "description": "Now with a 6.8\" display and thinner borders, adjustable warm light, up to 10 weeks of battery life, and 20% faster page turns.",
+      "variants": [
+        {
+          "variant_id": "kindle_pw_16gb_default",
+          "specifications": {
+            "Storage": "16 GB",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Amazon",
+              "price": 13999.0,
+              "rating": 4.8,
+              "rating_count": 25000,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Appario Retail",
+              "price": 13899.0,
+              "rating": 4.8,
+              "rating_count": 18000,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Cloudtail India",
+              "price": 14099.0,
+              "rating": 4.7,
+              "rating_count": 22000,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "ValueRetail",
+              "price": 13799.0,
+              "rating": 4.6,
+              "rating_count": 15000,
+              "delivery_in_days": 3,
+              "is_trusted_seller": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "sony_ps5",
+      "product_name": "Sony PlayStation 5",
+      "brand": "Sony",
+      "base_image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800&q=80",
+      "description": "Experience lightning-fast loading with an ultra-high-speed SSD, deeper immersion with support for haptic feedback, adaptive triggers, and 3D Audio.",
+      "variants": [
+        {
+          "variant_id": "ps5_default",
+          "specifications": {
+            "Edition": "Standard",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Sony Center",
+              "price": 54990.0,
+              "rating": 4.9,
+              "rating_count": 5000,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Games The Shop",
+              "price": 54500.0,
+              "rating": 4.8,
+              "rating_count": 1200,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Reliance Digital",
+              "price": 55000.0,
+              "rating": 4.8,
+              "rating_count": 2500,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Amazon",
+              "price": 54990.0,
+              "rating": 4.9,
+              "rating_count": 7000,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "nintendo_switch_oled",
+      "product_name": "Nintendo Switch OLED",
+      "brand": "Nintendo",
+      "base_image_url": "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?w=800&q=80",
+      "description": "Features a vibrant 7-inch OLED screen, a wide adjustable stand, a dock with a wired LAN port, 64 GB of internal storage, and enhanced audio.",
+      "variants": [
+        {
+          "variant_id": "switch_oled_default",
+          "specifications": {
+            "Model": "OLED",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "MX2Games",
+              "price": 29499.0,
+              "rating": 4.7,
+              "rating_count": 850,
+              "delivery_in_days": 5,
+              "is_trusted_seller": false
+            },
+            {
+              "seller_name": "Games The Shop",
+              "price": 30500.0,
+              "rating": 4.8,
+              "rating_count": 600,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "ElectroHub",
+              "price": 28999.0,
+              "rating": 4.6,
+              "rating_count": 1100,
+              "delivery_in_days": 4,
+              "is_trusted_seller": false
+            },
+            {
+              "seller_name": "GlobalElectronics",
+              "price": 29990.0,
+              "rating": 4.7,
+              "rating_count": 950,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "bose_qc_ultra_earbuds",
+      "product_name": "Bose QuietComfort Ultra Earbuds",
+      "brand": "Bose",
+      "base_image_url": "https://images.unsplash.com/photo-1598331668826-20cecc596b86?w=800&q=80",
+      "description": "World-class noise cancellation, now with Immersive Audio for sound that feels more real. CustomTune technology personalizes the sound to your ears.",
+      "variants": [
+        {
+          "variant_id": "bose_qc_ultra_default",
+          "specifications": {
+            "Type": "In-Ear",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Bose India",
+              "price": 25900.0,
+              "rating": 4.7,
+              "rating_count": 1100,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Appario Retail",
+              "price": 24990.0,
+              "rating": 4.8,
+              "rating_count": 1500,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Headphone Zone",
+              "price": 25500.0,
+              "rating": 4.9,
+              "rating_count": 900,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Croma",
+              "price": 25990.0,
+              "rating": 4.7,
+              "rating_count": 1300,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "samsung_odyssey_g7_monitor",
+      "product_name": "Samsung 27\" Odyssey G7 Monitor",
+      "brand": "Samsung",
+      "base_image_url": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=80",
+      "description": "A 240Hz, 1ms gaming monitor with a 1000R curved QLED screen, providing ultimate immersion and picture quality for serious gamers.",
+      "variants": [
+        {
+          "variant_id": "odyssey_g7_default",
+          "specifications": {
+            "Size": "27-inch",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Samsung Store",
+              "price": 45000.0,
+              "rating": 4.6,
+              "rating_count": 450,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "MDComputers",
+              "price": 43500.0,
+              "rating": 4.7,
+              "rating_count": 600,
+              "delivery_in_days": 4,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Appario Retail",
+              "price": 44500.0,
+              "rating": 4.8,
+              "rating_count": 800,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "ValueRetail",
+              "price": 42999.0,
+              "rating": 4.5,
+              "rating_count": 550,
+              "delivery_in_days": 5,
+              "is_trusted_seller": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "dji_mini_4_pro",
+      "product_name": "DJI Mini 4 Pro Drone",
+      "brand": "DJI",
+      "base_image_url": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&q=80",
+      "description": "Mini to the max. An advanced mini camera drone featuring powerful imaging capabilities, omnidirectional obstacle sensing, and a lightweight, foldable design.",
+      "variants": [
+        {
+          "variant_id": "dji_mini_4_pro_default",
+          "specifications": {
+            "Type": "Drone",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Appario Retail",
+              "price": 109990.0,
+              "rating": 4.9,
+              "rating_count": 150,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "DJI Official",
+              "price": 112000.0,
+              "rating": 4.9,
+              "rating_count": 100,
+              "delivery_in_days": 4,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "UrbanTech",
+              "price": 108500.0,
+              "rating": 4.8,
+              "rating_count": 200,
+              "delivery_in_days": 3,
+              "is_trusted_seller": false
+            },
+            {
+              "seller_name": "GadgetGalaxy",
+              "price": 110500.0,
+              "rating": 4.7,
+              "rating_count": 120,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "boat_airdopes_141",
+      "product_name": "boAt Airdopes 141",
+      "brand": "boAt",
+      "base_image_url": "https://images.unsplash.com/photo-1606841837239-c5a1a4a07af7?w=800&q=80",
+      "description": "Enjoy an extended break on weekends with your favourite episodes on stream, virtue of a playback time of up to 42 hours including the 6 hours nonstop playtime for earbuds.",
+      "variants": [
+        {
+          "variant_id": "airdopes_141_default",
+          "specifications": {
+            "Type": "In-Ear",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Appario Retail",
+              "price": 1299.0,
+              "rating": 4.1,
+              "rating_count": 150000,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "boAt Official",
+              "price": 1499.0,
+              "rating": 4.2,
+              "rating_count": 80000,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Flipkart Assured",
+              "price": 1349.0,
+              "rating": 4.1,
+              "rating_count": 120000,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "ValueRetail",
+              "price": 1199.0,
+              "rating": 4.0,
+              "rating_count": 95000,
+              "delivery_in_days": 3,
+              "is_trusted_seller": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "msft_surface_laptop_5",
+      "product_name": "Microsoft Surface Laptop 5",
+      "brand": "Microsoft",
+      "base_image_url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&q=80",
+      "description": "Blazing-fast performance and sleek portability in a premium laptop with a vibrant PixelSense touchscreen and an exceptional typing experience.",
+      "variants": [
+        {
+          "variant_id": "surface_laptop_5_default",
+          "specifications": {
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Microsoft Store",
+              "price": 104999.0,
+              "rating": 4.8,
+              "rating_count": 350,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Reliance Digital",
+              "price": 105999.0,
+              "rating": 4.7,
+              "rating_count": 450,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Appario Retail",
+              "price": 102999.0,
+              "rating": 4.8,
+              "rating_count": 600,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "NextGenElectronics",
+              "price": 103500.0,
+              "rating": 4.6,
+              "rating_count": 250,
+              "delivery_in_days": 4,
+              "is_trusted_seller": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "amazon_echo_dot_5",
+      "product_name": "Amazon Echo Dot (5th Gen)",
+      "brand": "Amazon",
+      "base_image_url": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=800&q=80",
+      "description": "Our most popular smart speaker with Alexa. The sleek, compact design delivers crisp vocals and balanced bass for full sound.",
+      "variants": [
+        {
+          "variant_id": "echo_dot_5_default",
+          "specifications": {
+            "Generation": "5th",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Amazon",
+              "price": 4499.0,
+              "rating": 4.6,
+              "rating_count": 85000,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Appario Retail",
+              "price": 4399.0,
+              "rating": 4.7,
+              "rating_count": 65000,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Croma",
+              "price": 4499.0,
+              "rating": 4.5,
+              "rating_count": 12000,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "GlobalElectronics",
+              "price": 4299.0,
+              "rating": 4.4,
+              "rating_count": 25000,
+              "delivery_in_days": 3,
+              "is_trusted_seller": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "samsung_galaxy_tab_s9",
+      "product_name": "Samsung Galaxy Tab S9",
+      "brand": "Samsung",
+      "base_image_url": "https://images.unsplash.com/photo-1561154464-82e9adf32764?w=800&q=80",
+      "description": "The ultimate tablet for work and play, featuring a stunning Dynamic AMOLED 2X display, S Pen included, and powerful performance.",
+      "variants": [
+        {
+          "variant_id": "tab_s9_default",
+          "specifications": {
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Samsung Store",
+              "price": 72999.0,
+              "rating": 4.8,
+              "rating_count": 800,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Appario Retail",
+              "price": 71999.0,
+              "rating": 4.9,
+              "rating_count": 1100,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Croma",
+              "price": 73499.0,
+              "rating": 4.7,
+              "rating_count": 950,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Reliance Digital",
+              "price": 73999.0,
+              "rating": 4.8,
+              "rating_count": 1200,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "xbox_series_x",
+      "product_name": "Xbox Series X",
+      "brand": "Microsoft",
+      "base_image_url": "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=800&q=80",
+      "description": "The fastest, most powerful Xbox ever. Explore rich new worlds with 12 teraflops of raw graphic processing power, DirectX ray tracing, and a custom SSD.",
+      "variants": [
+        {
+          "variant_id": "xbox_series_x_default",
+          "specifications": {
+            "Edition": "Standard",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Amazon",
+              "price": 49990.0,
+              "rating": 4.9,
+              "rating_count": 4500,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Games The Shop",
+              "price": 49500.0,
+              "rating": 4.8,
+              "rating_count": 900,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Flipkart Assured",
+              "price": 50990.0,
+              "rating": 4.7,
+              "rating_count": 3500,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "GadgetGalaxy",
+              "price": 48999.0,
+              "rating": 4.6,
+              "rating_count": 1200,
+              "delivery_in_days": 4,
+              "is_trusted_seller": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "fitbit_charge_6",
+      "product_name": "Fitbit Charge 6",
+      "brand": "Fitbit",
+      "base_image_url": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&q=80",
+      "description": "The essential fitness tracker with Google apps, heart rate on equipment, and 7 days of battery life to help you stay on track.",
+      "variants": [
+        {
+          "variant_id": "charge_6_default",
+          "specifications": {
+            "Type": "Fitness Tracker",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Appario Retail",
+              "price": 14999.0,
+              "rating": 4.6,
+              "rating_count": 1200,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Fitbit India",
+              "price": 15499.0,
+              "rating": 4.7,
+              "rating_count": 800,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Croma",
+              "price": 14999.0,
+              "rating": 4.5,
+              "rating_count": 950,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "UrbanTech",
+              "price": 14500.0,
+              "rating": 4.4,
+              "rating_count": 1500,
+              "delivery_in_days": 2,
+              "is_trusted_seller": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "logitech_c920_webcam",
+      "product_name": "Logitech C920 Webcam",
+      "brand": "Logitech",
+      "base_image_url": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=800&q=80",
+      "description": "Full HD 1080p video calling and recording with stereo audio. The perfect webcam for Skype, FaceTime, and YouTube.",
+      "variants": [
+        {
+          "variant_id": "c920_default",
+          "specifications": {
+            "Resolution": "1080p",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Appario Retail",
+              "price": 7995.0,
+              "rating": 4.8,
+              "rating_count": 25000,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "MDComputers",
+              "price": 7800.0,
+              "rating": 4.7,
+              "rating_count": 5000,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "TechEmporium",
+              "price": 8100.0,
+              "rating": 4.6,
+              "rating_count": 12000,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "DigitalWorld",
+              "price": 7500.0,
+              "rating": 4.5,
+              "rating_count": 18000,
+              "delivery_in_days": 4,
+              "is_trusted_seller": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "philips_hue_starter_kit",
+      "product_name": "Philips Hue Starter Kit",
+      "brand": "Philips",
+      "base_image_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+      "description": "Smart lighting made easy. Includes 4 smart bulbs with white and color ambiance and the Hue Bridge to control your lights from anywhere.",
+      "variants": [
+        {
+          "variant_id": "hue_starter_kit_default",
+          "specifications": {
+            "Type": "Smart Lighting",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Appario Retail",
+              "price": 14999.0,
+              "rating": 4.9,
+              "rating_count": 4000,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Philips Store",
+              "price": 15999.0,
+              "rating": 4.8,
+              "rating_count": 2500,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Croma",
+              "price": 15499.0,
+              "rating": 4.7,
+              "rating_count": 1800,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "ElectroHub",
+              "price": 14500.0,
+              "rating": 4.6,
+              "rating_count": 3200,
+              "delivery_in_days": 2,
+              "is_trusted_seller": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "canon_eos_r6_mark_ii",
+      "product_name": "Canon EOS R6 Mark II Camera",
+      "brand": "Canon",
+      "base_image_url": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=800&q=80",
+      "description": "A full-frame mirrorless camera for hybrid shooters. Delivers stunning photos and 4K 60p video with advanced subject tracking and in-body image stabilization.",
+      "variants": [
+        {
+          "variant_id": "r6_mark_ii_default",
+          "specifications": {
+            "Type": "Mirrorless Camera",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "Appario Retail",
+              "price": 243990.0,
+              "rating": 4.9,
+              "rating_count": 150,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Canon India",
+              "price": 249990.0,
+              "rating": 5.0,
+              "rating_count": 100,
+              "delivery_in_days": 4,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "GadgetGalaxy",
+              "price": 240000.0,
+              "rating": 4.8,
+              "rating_count": 200,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "PrimeDeals",
+              "price": 239990.0,
+              "rating": 4.7,
+              "rating_count": 250,
+              "delivery_in_days": 3,
+              "is_trusted_seller": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product_id": "irobot_roomba_j7_plus",
+      "product_name": "iRobot Roomba j7+",
+      "brand": "iRobot",
+      "base_image_url": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=800&q=80",
+      "description": "The robot vacuum that identifies and avoids obstacles like pet waste and charging cords. It empties itself into an enclosed bag, so you don't have to think about vacuuming for months.",
+      "variants": [
+        {
+          "variant_id": "roomba_j7_plus_default",
+          "specifications": {
+            "Type": "Robot Vacuum",
+            "Configuration": "Standard"
+          },
+          "offers": [
+            {
+              "seller_name": "iRobot India",
+              "price": 69900.0,
+              "rating": 4.7,
+              "rating_count": 500,
+              "delivery_in_days": 3,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Appario Retail",
+              "price": 68500.0,
+              "rating": 4.8,
+              "rating_count": 800,
+              "delivery_in_days": 1,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Croma",
+              "price": 70900.0,
+              "rating": 4.6,
+              "rating_count": 650,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            },
+            {
+              "seller_name": "Reliance Digital",
+              "price": 71900.0,
+              "rating": 4.7,
+              "rating_count": 700,
+              "delivery_in_days": 2,
+              "is_trusted_seller": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

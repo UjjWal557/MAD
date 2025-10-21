@@ -1,22 +1,76 @@
 <resources>
-    <string name="app_name">Ecommerce</string>
-    <string name="logo">Quick Deals</string>
+    <string name="app_name">E-Commerce</string>
 
-    <string name="welcome">Welcome Back!</string>
-    <string name="desc">Login to Continue</string>
-    <!--Login Details-->
+    <!-- Common -->
+    <string name="logo">Logo</string>
+    <string name="product_image">Product Image</string>
+    <string name="new_deals">🎁 New Deals</string>
+    <string name="deals_not_available">New deals not available</string>
+    <string name="feature_coming_soon">Feature coming soon</string>
+    <string name="error_loading_products">Error loading products</string>
+
+    <!-- Login Activity -->
+    <string name="welcome">Welcome!</string>
+    <string name="desc">Login to continue</string>
     <string name="mail">Email</string>
     <string name="password">Password</string>
-    <string name="login">LOGIN</string>
+    <string name="login">Login</string>
     <string name="no_acc">Don\'t have an account?</string>
-    <string name="signup">SIGN UP</string>
+    <string name="signup">Sign Up</string>
+    <string name="login_successful">Login Successful</string>
 
-    <!--Register Details-->
-    <string name="name">Name</string>
+    <!-- Registration Activity -->
+    <string name="create_acc">Create Account</string>
+    <string name="name">Full Name</string>
+    <string name="number">Phone Number</string>
     <string name="address">Address</string>
-    <string name="number">Number</string>
-    <string name="create_acc">Create Account!</string>
-    <string name="acc">Already have an account?</string>
-    <string name="confirm_password">Confirm Password</string>
     <string name="register">Register</string>
+    <string name="acc">Already have an account?</string>
+    <string name="registration_successful">Successfully Registered</string>
+
+    <!-- Validation Errors -->
+    <string name="error_email_required">Email is required</string>
+    <string name="error_invalid_email">Invalid email address</string>
+    <string name="error_password_required">Password is required</string>
+    <string name="error_password_too_short">Password must be at least 6 characters</string>
+    <string name="error_name_required">Name is required</string>
+    <string name="error_name_too_short">Name must be at least 3 characters</string>
+    <string name="error_phone_required">Phone number is required</string>
+    <string name="error_phone_invalid">Phone number must be 10 digits</string>
+    <string name="error_address_required">Address is required</string>
+
+    <!-- Home Activity -->
+    <string name="search_hint">Search for mobile under 15000</string>
+
+    <!-- Product Detail Activity -->
+    <string name="available_offers">Available offers:</string>
+    <string name="added_to_cart">%1$s from %2$s added to cart 🛒</string>
+    <string name="already_in_cart">This item is already in your cart</string>
+    <string name="product_not_found">Error: Product not found</string>
+
+    <!-- Cart Activity -->
+    <string name="my_cart">My Cart</string>
+    <string name="empty_cart">Your cart is empty 🛒</string>
+    <string name="removed_from_cart">%1$s from %2$s removed from cart</string>
+    <string name="remove_from_cart">Remove from cart</string>
+    <string name="total_items">Total Items: %1$d</string>
+    <string name="total_price">Total: ₹%1$s</string>
+    <string name="checkout">Checkout</string>
+
+    <!-- Profile Activity -->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="settings">Settings</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_cart">Cart</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Seller Item -->
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="delivery_days">Delivery in %1$d days</string>
+    <string name="trusted_seller">Trusted Seller</string>
+    <string name="untrusted_seller">Untrusted Seller</string>
+    <string name="rating_format">%1$.1f (%2$d)</string>
+    <string name="price_format">₹%1$s</string>
 </resources>

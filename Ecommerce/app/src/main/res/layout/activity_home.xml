@@ -12,12 +12,11 @@
         android:id="@+id/top"
         android:layout_width="130dp"
         android:layout_height="21dp"
-        app:cardCornerRadius="25dp"
-        android:layout_margin="25dp"
+        app:cardCornerRadius="@dimen/card_corner_radius_xlarge"
+        android:layout_margin="@dimen/margin_large"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        >
-        <!-- Logo Image -->
+        app:layout_constraintStart_toStartOf="parent">
+
         <ImageView
             android:id="@+id/logoImage"
             android:layout_width="wrap_content"
@@ -30,33 +29,30 @@
         android:id="@+id/deal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" 🎁 New Deals"
+        android:text="@string/new_deals"
         android:textStyle="bold"
         android:textSize="17sp"
-        android:layout_margin="25dp"
+        android:layout_margin="@dimen/margin_large"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="25dp"
-        />
+        android:layout_marginStart="@dimen/margin_large" />
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="8dp"
-        android:queryHint="Search for mobile under 15000"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_small"
+        android:queryHint="@string/search_hint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/top">
-
-    </androidx.appcompat.widget.SearchView>
+        app:layout_constraintTop_toBottomOf="@id/top" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewProducts"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/margin_small"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +61,7 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

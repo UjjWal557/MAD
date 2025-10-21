@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.ecommerce.adapter.ProductAdapter
 import com.example.ecommerce.databinding.ActivityHomeBinding
 import com.example.ecommerce.model.Product
+import com.example.ecommerce.model.ProductResponse
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.IOException
@@ -29,15 +30,19 @@ class HomeActivity : AppCompatActivity() {
         setupBottomNavigation()
 
         binding.deal.setOnClickListener {
-            Toast.makeText(this,"New deals not available",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.deals_not_available), Toast.LENGTH_SHORT).show()
         }
 
-        originalProductList = loadProductsFromAssets()
-        productAdapter.submitList(originalProductList)
+        loadProducts()
     }
 
     private fun setupRecyclerView() {
-        productAdapter = ProductAdapter()
+        productAdapter = ProductAdapter { product ->
+            val intent = Intent(this, ProductDetailActivity::class.java).apply {
+                putExtra("PRODUCT_ID", product.productId)
+            }
+            startActivity(intent)
+        }
 
         binding.recyclerViewProducts.apply {
             adapter = productAdapter
@@ -59,6 +64,8 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun setupBottomNavigation() {
+        binding.bottomNavigationView.selectedItemId = R.id.navigation_home
+
         binding.bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigation_home -> {
@@ -66,10 +73,12 @@ class HomeActivity : AppCompatActivity() {
                 }
                 R.id.navigation_cart -> {
                     startActivity(Intent(this, CartActivity::class.java))
+                    finish()
                     true
                 }
-                R.id.navigation_profile ->{
+                R.id.navigation_profile -> {
                     startActivity(Intent(this, ProfileActivity::class.java))
+                    finish()
                     true
                 }
                 else -> false
@@ -83,17 +92,28 @@ class HomeActivity : AppCompatActivity() {
         } else {
             val searchQuery = query.lowercase(Locale.ROOT)
             originalProductList.filter { product ->
-                product.name.lowercase(Locale.ROOT).contains(searchQuery)
+                product.productName.lowercase(Locale.ROOT).contains(searchQuery) ||
+                        product.brand.lowercase(Locale.ROOT).contains(searchQuery) ||
+                        product.description.lowercase(Locale.ROOT).contains(searchQuery)
             }
         }
         productAdapter.submitList(filteredList)
     }
 
+    private fun loadProducts() {
+        originalProductList = loadProductsFromAssets()
+        if (originalProductList.isEmpty()) {
+            Toast.makeText(this, getString(R.string.error_loading_products), Toast.LENGTH_LONG).show()
+        } else {
+            productAdapter.submitList(originalProductList)
+        }
+    }
+
     private fun loadProductsFromAssets(): List<Product> {
         return try {
             val jsonString = assets.open("products.json").bufferedReader().use { it.readText() }
-            val listProductType = object : TypeToken<List<Product>>() {}.type
-            Gson().fromJson(jsonString, listProductType)
+            val responseType = object : TypeToken<ProductResponse>() {}.type
+            Gson().fromJson<ProductResponse>(jsonString, responseType).products
         } catch (ioException: IOException) {
             ioException.printStackTrace()
             emptyList()
