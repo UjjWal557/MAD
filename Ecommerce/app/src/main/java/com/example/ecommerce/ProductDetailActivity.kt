@@ -1,9 +1,6 @@
 package com.example.ecommerce
 
 import android.os.Bundle
-import android.view.ViewGroup
-import android.widget.LinearLayout
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -14,8 +11,7 @@ import com.example.ecommerce.model.Cart
 import com.example.ecommerce.model.CartItem
 import com.example.ecommerce.model.Product
 import com.example.ecommerce.model.ProductResponse
-import com.google.android.material.chip.Chip
-import com.google.android.material.chip.ChipGroup
+import com.example.ecommerce.model.Variant
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.IOException
@@ -26,7 +22,7 @@ class ProductDetailActivity : AppCompatActivity() {
     private lateinit var offerAdapter: OfferAdapter
     private var allProducts = listOf<Product>()
     private lateinit var currentProduct: Product
-    private val selectedSpecs = mutableMapOf<String, String>()
+    private var selectedVariant: Variant? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,7 +48,7 @@ class ProductDetailActivity : AppCompatActivity() {
         currentProduct = product
         setupUI()
         setupOffersRecyclerView()
-        createSpecSelectors()
+        displaySpecificationsAndOffers()
     }
 
     private fun setupUI() {
@@ -77,7 +73,7 @@ class ProductDetailActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(
                     this,
-                    "This item is already in your cart",
+                    "Quantity increased in cart",
                     Toast.LENGTH_SHORT
                 ).show()
             }
@@ -88,71 +84,25 @@ class ProductDetailActivity : AppCompatActivity() {
         }
     }
 
-    private fun createSpecSelectors() {
-        val specTypes = currentProduct.variants
-            .flatMap { it.specifications.keys }
-            .distinct()
+    private fun displaySpecificationsAndOffers() {
+        // For simplicity, we'll show the first variant's specifications and all offers from all variants
+        if (currentProduct.variants.isNotEmpty()) {
+            selectedVariant = currentProduct.variants.first()
 
-        specTypes.forEach { specType ->
-            val specValues = currentProduct.variants
-                .mapNotNull { it.specifications[specType] }
-                .distinct()
-
-            addChipGroupForSpec(specType, specValues)
-        }
-    }
-
-    private fun addChipGroupForSpec(specType: String, specValues: List<String>) {
-        // Create a TextView label
-        val specLabel = TextView(this).apply {
-            text = "Select $specType:"
-            layoutParams = LinearLayout.LayoutParams(
-                ViewGroup.LayoutParams.WRAP_CONTENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT
-            ).apply {
-                topMargin = 16.dpToPx()
-            }
-            setTextAppearance(android.R.style.TextAppearance_Material_Title)
-        }
-
-        // Create a ChipGroup
-        val chipGroup = ChipGroup(this).apply {
-            isSingleSelection = true
-            layoutParams = LinearLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT
-            )
-        }
-
-        // Create chips
-        specValues.forEach { specValue ->
-            val chip = Chip(this).apply {
-                text = specValue
-                isCheckable = true
-                setOnCheckedChangeListener { _, isChecked ->
-                    if (isChecked) {
-                        selectedSpecs[specType] = specValue
-                        updateOffers()
-                    }
+            // Display specifications
+            val specsText = buildString {
+                selectedVariant?.specifications?.forEach { (key, value) ->
+                    append("• $key: $value\n")
                 }
-            }
-            chipGroup.addView(chip)
-        }
+            }.trim()
 
-        binding.specsContainer.addView(specLabel)
-        binding.specsContainer.addView(chipGroup)
-    }
+            binding.textViewSpecifications.text = specsText.ifEmpty { "No specifications available" }
 
-    private fun updateOffers() {
-        val selectedVariant = currentProduct.variants.find { variant ->
-            selectedSpecs.all { (key, value) ->
-                variant.specifications[key] == value
-            }
-        }
-
-        if (selectedVariant != null) {
-            offerAdapter.submitList(selectedVariant.offers)
+            // Collect all offers from all variants
+            val allOffers = currentProduct.variants.flatMap { it.offers }.distinctBy { it.sellerName }
+            offerAdapter.submitList(allOffers)
         } else {
+            binding.textViewSpecifications.text = "No specifications available"
             offerAdapter.submitList(emptyList())
         }
     }
@@ -167,10 +117,5 @@ class ProductDetailActivity : AppCompatActivity() {
             Toast.makeText(this, "Error loading products", Toast.LENGTH_SHORT).show()
             emptyList()
         }
-    }
-
-    // Extension function for dp to px conversion
-    private fun Int.dpToPx(): Int {
-        return (this * resources.displayMetrics.density).toInt()
     }
 }

@@ -125,8 +125,6 @@ class Register : AppCompatActivity() {
             return
         }
 
-        // TODO: Implement actual registration with backend/Firebase
-        // For now, just show success and navigate to login
         Toast.makeText(this, getString(R.string.registration_successful), Toast.LENGTH_LONG).show()
         Intent(this, MainActivity::class.java).also {
             startActivity(it)

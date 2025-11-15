@@ -47,6 +47,7 @@
     <string name="added_to_cart">%1$s from %2$s added to cart 🛒</string>
     <string name="already_in_cart">This item is already in your cart</string>
     <string name="product_not_found">Error: Product not found</string>
+    <string name="specification">Specifications</string>
 
     <!-- Cart Activity -->
     <string name="my_cart">My Cart</string>

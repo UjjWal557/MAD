@@ -24,16 +24,31 @@ class OfferAdapter(
             binding.textViewRating.text = context.getString(R.string.rating_format, offer.rating, offer.ratingCount)
             binding.textViewDelivery.text = context.getString(R.string.delivery_days, offer.deliveryInDays)
 
-            // Show trusted/untrusted seller badge
+            // Determine if seller is trusted based on both JSON flag AND rating criteria
+            val isTrusted = offer.isTrustedSeller && offer.rating > 4.3 && offer.ratingCount > 1000
+
+            // Show trusted/untrusted seller badge with proper color handling for dark mode
             binding.textView.visibility = View.VISIBLE
-            if (offer.isTrustedSeller) {
+            if (isTrusted) {
                 binding.textView.text = context.getString(R.string.trusted_seller)
                 binding.textView.setTextColor(ContextCompat.getColor(context, R.color.trusted))
-                binding.textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_trusted, 0, 0, 0)
+
+                // Set drawable with tint
+                val drawable = ContextCompat.getDrawable(context, R.drawable.ic_trusted)
+                binding.textView.setCompoundDrawablesWithIntrinsicBounds(drawable, null, null, null)
+                binding.textView.compoundDrawablesRelative[0]?.setTint(
+                    ContextCompat.getColor(context, R.color.trusted)
+                )
             } else {
                 binding.textView.text = context.getString(R.string.untrusted_seller)
                 binding.textView.setTextColor(ContextCompat.getColor(context, R.color.not_trusted))
-                binding.textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_untrusted, 0, 0, 0)
+
+                // Set drawable with tint
+                val drawable = ContextCompat.getDrawable(context, R.drawable.ic_untrusted)
+                binding.textView.setCompoundDrawablesWithIntrinsicBounds(drawable, null, null, null)
+                binding.textView.compoundDrawablesRelative[0]?.setTint(
+                    ContextCompat.getColor(context, R.color.not_trusted)
+                )
             }
 
             binding.buttonAddToCart.setOnClickListener {

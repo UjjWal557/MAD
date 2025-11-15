@@ -65,6 +65,7 @@
         android:layout_marginStart="8dp"
         android:text="Settings"
         app:icon="@drawable/ic_settings"
+        app:iconTint="?attr/colorOnSurface"
         app:layout_constraintBottom_toBottomOf="@+id/buttonEditProfile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonEditProfile"
@@ -85,7 +86,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
-        android:drawableStart="@drawable/ic_email"
+        app:drawableStartCompat="@drawable/ic_email"
+        app:drawableTint="?attr/colorPrimary"
         android:drawablePadding="16dp"
         android:gravity="center_vertical"
         android:text="user_is_new@gmail.com"
@@ -98,7 +100,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
-        android:drawableStart="@drawable/ic_phone"
+        app:drawableStartCompat="@drawable/ic_phone"
+        app:drawableTint="?attr/colorPrimary"
         android:drawablePadding="16dp"
         android:gravity="center_vertical"
         android:text="1234567890"
@@ -111,7 +114,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
-        android:drawableStart="@drawable/ic_location"
+        app:drawableStartCompat="@drawable/ic_location"
+        app:drawableTint="?attr/colorPrimary"
         android:drawablePadding="16dp"
         android:gravity="center_vertical"
         android:text="Ganpat University"
@@ -119,9 +123,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewPhone" />
 
+    <!-- Dark Mode Toggle Section -->
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@id/textViewLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewThemeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="Dark Mode"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider2"/>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchDarkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewThemeLabel"
+        app:layout_constraintBottom_toBottomOf="@id/textViewThemeLabel"/>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

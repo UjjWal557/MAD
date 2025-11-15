@@ -83,7 +83,7 @@ object Cart {
         return items.isEmpty()
     }
 
-    // Get number of unique items (not counting quantities)
+    // Get number of unique items
     fun getUniqueItemCount(): Int {
         return items.size
     }

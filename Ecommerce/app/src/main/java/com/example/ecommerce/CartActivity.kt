@@ -22,15 +22,30 @@ class CartActivity : AppCompatActivity() {
 
         setupRecyclerView()
         setupBottomNavigation()
-
-        binding.deal.setOnClickListener {
-            Toast.makeText(this, getString(R.string.deals_not_available), Toast.LENGTH_SHORT).show()
-        }
+        setupClickListeners()
     }
 
     override fun onResume() {
         super.onResume()
         loadCartItems()
+    }
+
+    private fun setupClickListeners() {
+        binding.deal.setOnClickListener {
+            Toast.makeText(this, getString(R.string.deals_not_available), Toast.LENGTH_SHORT).show()
+        }
+
+        binding.buttonCheckout.setOnClickListener {
+            if (Cart.isEmpty()) {
+                Toast.makeText(this, "Your cart is empty!", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(
+                    this,
+                    "Checkout feature coming soon! Total: ₹${"%,.0f".format(Cart.getTotalPrice())}",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
+        }
     }
 
     private fun setupBottomNavigation() {
@@ -91,11 +106,13 @@ class CartActivity : AppCompatActivity() {
             binding.textViewEmptyCart.visibility = View.GONE
             binding.cartSummary.visibility = View.VISIBLE
 
+            // Create a new list to force adapter update
+            cartAdapter.submitList(null)
             cartAdapter.submitList(cartItems.toList())
-
-            // Update cart summary
             updateCartSummary()
         }
+
+        updateCartBadge()
     }
 
     private fun updateCartSummary() {
@@ -104,5 +121,16 @@ class CartActivity : AppCompatActivity() {
 
         binding.textViewTotalItems.text = getString(R.string.total_items, totalItems)
         binding.textViewTotalPrice.text = getString(R.string.total_price, "%,.0f".format(totalPrice))
+    }
+
+    private fun updateCartBadge() {
+        val cartItemCount = Cart.getTotalItemCount()
+        val badge = binding.bottomNavigationView.getOrCreateBadge(R.id.navigation_cart)
+        if (cartItemCount > 0) {
+            badge.isVisible = true
+            badge.number = cartItemCount
+        } else {
+            badge.isVisible = false
+        }
     }
 }

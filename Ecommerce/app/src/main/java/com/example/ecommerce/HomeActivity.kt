@@ -8,6 +8,7 @@ import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.ecommerce.adapter.ProductAdapter
 import com.example.ecommerce.databinding.ActivityHomeBinding
+import com.example.ecommerce.model.Cart
 import com.example.ecommerce.model.Product
 import com.example.ecommerce.model.ProductResponse
 import com.google.gson.Gson
@@ -34,6 +35,11 @@ class HomeActivity : AppCompatActivity() {
         }
 
         loadProducts()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        updateCartBadge()
     }
 
     private fun setupRecyclerView() {
@@ -83,6 +89,19 @@ class HomeActivity : AppCompatActivity() {
                 }
                 else -> false
             }
+        }
+
+        updateCartBadge()
+    }
+
+    private fun updateCartBadge() {
+        val cartItemCount = Cart.getTotalItemCount()
+        val badge = binding.bottomNavigationView.getOrCreateBadge(R.id.navigation_cart)
+        if (cartItemCount > 0) {
+            badge.isVisible = true
+            badge.number = cartItemCount
+        } else {
+            badge.isVisible = false
         }
     }
 

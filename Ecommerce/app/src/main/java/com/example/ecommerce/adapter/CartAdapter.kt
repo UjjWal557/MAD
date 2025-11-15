@@ -29,7 +29,9 @@ class CartAdapter(
             binding.productName.text = cartItem.product.productName
             binding.sellerName.text = "Sold by: ${cartItem.offer.sellerName}"
             binding.productPrice.text = "₹${"%,.0f".format(cartItem.offer.price)}"
-            binding.quantityText.text = cartItem.quantity.toString()
+
+            // Update both quantity displays
+            updateQuantityDisplays(cartItem.quantity)
 
             // Calculate and show total price for this item
             val totalPrice = cartItem.getTotalPrice()
@@ -41,20 +43,36 @@ class CartAdapter(
 
             // Quantity controls
             binding.buttonDecrease.setOnClickListener {
-                if (cartItem.quantity > 1) {
-                    onQuantityChanged(cartItem, cartItem.quantity - 1)
-                } else {
-                    onRemoveClicked(cartItem)
+                val currentPosition = bindingAdapterPosition
+                if (currentPosition != RecyclerView.NO_POSITION) {
+                    val currentItem = getItem(currentPosition)
+                    if (currentItem.quantity > 1) {
+                        onQuantityChanged(currentItem, currentItem.quantity - 1)
+                    } else {
+                        onRemoveClicked(currentItem)
+                    }
                 }
             }
 
             binding.buttonIncrease.setOnClickListener {
-                onQuantityChanged(cartItem, cartItem.quantity + 1)
+                val currentPosition = bindingAdapterPosition
+                if (currentPosition != RecyclerView.NO_POSITION) {
+                    val currentItem = getItem(currentPosition)
+                    onQuantityChanged(currentItem, currentItem.quantity + 1)
+                }
             }
 
             binding.buttonRemove.setOnClickListener {
-                onRemoveClicked(cartItem)
+                val currentPosition = bindingAdapterPosition
+                if (currentPosition != RecyclerView.NO_POSITION) {
+                    onRemoveClicked(getItem(currentPosition))
+                }
             }
+        }
+
+        private fun updateQuantityDisplays(quantity: Int) {
+            binding.quantityText.text = quantity.toString()
+            binding.quantityDisplay.text = quantity.toString()
         }
     }
 }
