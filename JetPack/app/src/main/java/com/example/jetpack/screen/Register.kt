@@ -35,11 +35,16 @@ import androidx.navigation.compose.rememberNavController
 import com.example.jetpack.R
 import com.example.jetpack.screen.components.FormField
 
+
 @Composable
-fun LoginUI(navController: NavController)
+fun RegisterUI(navController: NavController)
 {
+    var name by remember { mutableStateOf("") }
+    var phone by remember { mutableStateOf("") }
+    var city by remember { mutableStateOf("") }
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
+    var cnfpassword by remember { mutableStateOf("") }
     val context = LocalContext.current
 
     Column(modifier = Modifier.fillMaxSize().padding(20.dp)) {
@@ -51,63 +56,72 @@ fun LoginUI(navController: NavController)
             contentScale = ContentScale.Fit
         )
         Card(
-            elevation = CardDefaults.cardElevation(defaultElevation = 20.dp),
+            elevation = CardDefaults.cardElevation(defaultElevation = 16.dp),
             shape = MaterialTheme.shapes.medium,
             modifier = Modifier.fillMaxWidth()
         ) {
             Column(
-                modifier = Modifier.fillMaxWidth().padding(8.dp)
+                modifier = Modifier.fillMaxWidth().padding(6.dp)
             ) {
+
                 FormField(
-                    label = "Email",
-                    textState = email,
+                    label = "Name",
+                    textState = name,
+                    onTextChange = { name = it })
+                FormField(
+                    label = "Phone Number",
+                    textState = phone,
+                    onTextChange = { phone = it },
+                    isNumber = true)
+                FormField(
+                    label = "City",
+                    textState = city,
+                    onTextChange = { city = it })
+                FormField(
+                    label = "Email", textState = email,
                     onTextChange = { email = it })
                 FormField(
                     label = "Password",
                     textState = password,
                     onTextChange = { password = it },
-                    isPasswordField = true
-                )
-                Text(
-                    text = "Forgot Password?",
-                    fontSize = 18.sp,
-                    modifier = Modifier.padding(top = 20.dp, bottom = 20.dp).align(Alignment.End)
-                )
+                    isPasswordField = true)
+                FormField(
+                    label = "Confirm Password",
+                    textState = cnfpassword,
+                    onTextChange = { cnfpassword = it },
+                    isPasswordField = true)
                 Button(
-                    onClick = {
-                        Toast.makeText(context,
-                            "Login Successful!",
-                            Toast.LENGTH_SHORT).show()
-                    },
-                    modifier = Modifier.fillMaxWidth().align(Alignment.CenterHorizontally)
+                    onClick = {Toast.makeText(context, "Register" +
+                            " Successful!", Toast.LENGTH_SHORT).show()
+                              },
+                    modifier = Modifier.fillMaxWidth().align(Alignment.CenterHorizontally).padding(top = 25.dp)
                 )
                 {
-                    Text("Login", fontSize = 18.sp)
-                }
-            }
-        }
-            Spacer(modifier = Modifier.height(50.dp))
-            Row(
-                modifier = Modifier.align(Alignment.CenterHorizontally),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Text("Don't have an account?",
-                    fontSize = 16.sp)
-                Spacer(modifier = Modifier.width(5.dp))
-                TextButton(onClick = {navController.navigate("Register")}) {
-                    Text("SIGN UP",
-                        color = Color(0xFFE91E63),
+                    Text("Register",
                         fontSize = 18.sp)
                 }
             }
+        }
+        Spacer(modifier = Modifier.height(30.dp))
+        Row(
+            modifier = Modifier.align(Alignment.CenterHorizontally),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text("Already have an account?", fontSize = 16.sp)
+            Spacer(modifier = Modifier.width(5.dp))
+            TextButton(onClick = {navController.navigate("LoginScreen")}) {
+                Text("LOGIN",
+                    color = Color(0xFFE91E63),
+                    fontSize = 18.sp)
+            }
+        }
     }
 }
 
 @Preview(showBackground = true)
 @Composable
-fun LoginActivityPreview()
+fun RegisterActivityPreview()
 {
-
-    val navController = rememberNavController()
-    LoginUI(navController)
+    val navControl = rememberNavController()
+    RegisterUI(navControl)
 }
