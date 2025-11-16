@@ -24,10 +24,10 @@ class OfferAdapter(
             binding.textViewRating.text = context.getString(R.string.rating_format, offer.rating, offer.ratingCount)
             binding.textViewDelivery.text = context.getString(R.string.delivery_days, offer.deliveryInDays)
 
-            // Determine if seller is trusted based on both JSON flag AND rating criteria
+            // Determine if seller is trusted
             val isTrusted = offer.isTrustedSeller && offer.rating > 4.3 && offer.ratingCount > 1000
 
-            // Show trusted/untrusted seller badge with proper color handling for dark mode
+            // Show trusted/untrusted seller badgee
             binding.textView.visibility = View.VISIBLE
             if (isTrusted) {
                 binding.textView.text = context.getString(R.string.trusted_seller)

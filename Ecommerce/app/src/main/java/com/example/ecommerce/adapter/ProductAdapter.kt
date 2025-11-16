@@ -39,8 +39,6 @@ class ProductAdapter(
             binding.textViewProductName.text = product.productName
             binding.textViewDescription.text = product.description
 
-            // REMOVED: Useless visibility changes for non-existent views
-
             Glide.with(itemView.context)
                 .load(product.baseImageUrl)
                 .placeholder(R.drawable.ic_placeholder)

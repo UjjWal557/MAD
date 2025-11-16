@@ -85,8 +85,7 @@ class ProductDetailActivity : AppCompatActivity() {
     }
 
     private fun displaySpecificationsAndOffers() {
-        // For simplicity, we'll show the first variant's specifications and all offers from all variants
-        if (currentProduct.variants.isNotEmpty()) {
+                if (currentProduct.variants.isNotEmpty()) {
             selectedVariant = currentProduct.variants.first()
 
             // Display specifications

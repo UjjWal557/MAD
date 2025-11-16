@@ -69,12 +69,10 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-        // TODO: Implement actual authentication with backend/Firebase
-        // For now, accept any valid email/password combination
         Toast.makeText(this, getString(R.string.login_successful), Toast.LENGTH_SHORT).show()
         Intent(this, HomeActivity::class.java).also {
             startActivity(it)
-            finish() // Prevent going back to login
+            finish()
         }
     }
 }
