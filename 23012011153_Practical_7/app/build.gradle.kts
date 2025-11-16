@@ -43,13 +43,10 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
 
-    // RecyclerView - REQUIRED for displaying list
     implementation("androidx.recyclerview:recyclerview:1.3.2")
 
-    // CardView - REQUIRED for person_item.xml cards
     implementation("androidx.cardview:cardview:1.0.0")
-
-    // Coroutines - REQUIRED for background API calls
+    
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
 

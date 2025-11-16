@@ -19,7 +19,7 @@ class PersonAdapter(
         val textViewEmail: TextView = itemView.findViewById(R.id.textViewEmail)
         val textViewAddress: TextView = itemView.findViewById(R.id.textViewAddress)
         val buttonDelete: ImageView = itemView.findViewById(R.id.buttonDelete)
-        // Removed buttonMap since we don't need MapActivity
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PersonViewHolder {

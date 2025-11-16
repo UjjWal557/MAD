@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var buttonRefresh: ImageView
     private lateinit var textViewTitle: TextView
-
     private lateinit var databaseHelper: DatabaseHelper
     private lateinit var personAdapter: PersonAdapter
     private var personList: ArrayList<Person> = ArrayList()
