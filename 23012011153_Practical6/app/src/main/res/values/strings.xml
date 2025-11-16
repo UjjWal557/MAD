@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MAD_Animation_Practical</string>
+    <string name="create_alarm_time">Create Alarm Time</string>
+    <string name="alarm_description">By pressing buttons, Alarm can be created and cancelled.</string>
+    <string name="check_time_description">Check Current time by looking below real digital clock.</string>
+    <string name="create_alarm">Create Alarm</string>
+    <string name="cancel_alarm">Cancel Alarm</string>
+    <string name="alarm_animation">Alarm Animation</string>
+    <string name="heart_icon">Heart Icon</string>
+    <string name="university_logo">University Logo</string>
+
+
+
+        <string name="practical">MAD_Animation_Practical</string>
+        <string name="alarm_time">Create Alarm Time</string>
+        <string name="text1">By pressing buttons, Alarm can be created and cancelled.</string>
+        <string name="text2">Check Current time by looking below real digital clock.</string>
+        <string name="alarm_create">Create Alarm</string>
+        <string name="alarm_cancel">Cancel Alarm</string>
+        <string name="heart_animation">heart_animation</string>
+        <string name="gun_animation">gun_animation</string>
+        <string name="gun_img">gun img</string>
+
+</resources>
