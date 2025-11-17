@@ -223,35 +223,6 @@ dependencies {
 
 ### For Developers
 
-#### Adding New Products
-Edit `assets/products.json`:
-```json
-{
-  "product_id": "unique_id",
-  "product_name": "Product Name",
-  "brand": "Brand Name",
-  "base_image_url": "https://image-url.com/image.jpg",
-  "description": "Product description",
-  "variants": [
-    {
-      "variant_id": "variant_unique_id",
-      "specifications": {
-        "Configuration": "8GB|256GB"
-      },
-      "offers": [
-        {
-          "seller_name": "Seller Name",
-          "price": 99999.0,
-          "rating": 4.8,
-          "rating_count": 1000,
-          "delivery_in_days": 2,
-          "is_trusted_seller": true
-        }
-      ]
-    }
-  ]
-}
-```
 
 #### Customizing UI
 - **Colors:** `res/values/colors.xml`
