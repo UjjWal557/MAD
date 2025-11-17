@@ -1,4 +1,4 @@
-# 🛒 E-Commerce Android App
+# E-Commerce Android App
 
 A modern, feature-rich e-commerce Android application built with Kotlin, featuring product browsing, variant selection, shopping cart, and user profiles.
 
@@ -8,7 +8,7 @@ A modern, feature-rich e-commerce Android application built with Kotlin, featuri
 
 ---
 
-## 📱 Features
+## Features
 
 ### User Authentication
 - ✅ User login with email validation
@@ -43,11 +43,10 @@ A modern, feature-rich e-commerce Android application built with Kotlin, featuri
 ### Navigation
 - ✅ Bottom navigation bar (Home, Cart, Profile)
 - ✅ Smooth navigation between screens
-- ✅ Proper activity lifecycle management
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ### Design Pattern
 - **MVVM-lite** architecture
@@ -83,7 +82,7 @@ com.example.ecommerce/
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 <p align="center">
   <img src="screenshots/home.png" width="200" alt="Home Screen" />
@@ -100,29 +99,29 @@ com.example.ecommerce/
 
 ### Key Features Showcase
 
-**🏠 Home Screen**
+**Home Screen**
 - Product grid with search functionality
 - Bottom navigation bar
 - Clean card-based UI
 
-**📦 Product Pages**
+**Product Pages**
 - Browse products with images and pricing
 - Detailed product view with variant selection
 - Multiple seller offers with ratings and delivery info
 
-**🛒 Shopping Cart**
+**Shopping Cart**
 - Item management with quantity controls
 - Real-time price calculation
 - Remove items option
 
-**👤 User Profile & Authentication**
+**User Profile & Authentication**
 - Secure login and registration
 - User information display
 - Settings and edit profile access
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Android Studio Arctic Fox or later
@@ -166,7 +165,7 @@ com.example.ecommerce/
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 Add these to your `build.gradle` (Module: app):
 
@@ -194,7 +193,7 @@ dependencies {
 
 ---
 
-## 🎯 Usage
+## Usage
 
 ### For Users
 
@@ -263,7 +262,7 @@ Glide.with(context)
 
 ---
 
-## ✅ Testing
+## Testing
 
 ### Manual Testing Checklist
 
@@ -300,65 +299,22 @@ Glide.with(context)
 
 ---
 
-## 🐛 Known Issues
+## Known Issues
 
-- ⚠️ Cart data is lost when app is closed (no persistence yet)
-- ⚠️ Checkout functionality not implemented
-- ⚠️ User authentication is simulated (no backend)
-- ⚠️ Profile edit functionality shows "coming soon"
-
----
-
-## 🚧 Roadmap
-
-### Version 2.0 (Planned)
-- [ ] Firebase Authentication integration
-- [ ] Room Database for cart persistence
-- [ ] Order history
-- [ ] Checkout and payment integration
-- [ ] Push notifications
-- [ ] Wishlist feature
-
-### Version 2.1 (Future)
-- [ ] Product reviews and ratings
-- [ ] Advanced filters and sorting
-- [ ] User addresses management
-- [ ] Order tracking
-- [ ] Dark mode support
+- Cart data is lost when app is closed
+- Checkout functionality not implemented
+- User authentication is simulated (no backend)
 
 ---
 
-## 🤝 Contributing
 
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Code Style
-- Follow Kotlin coding conventions
-- Use meaningful variable names
-- Add comments for complex logic
-- Keep functions small and focused
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👥 Authors
+## Authors
 
 - **Ujjwal Roy** - *Initial work* - [UjjWal557](https://github.com/UjjWal557)
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Material Design 3 for UI components
 - Unsplash for product images
@@ -367,13 +323,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📞 Support
 
-For support, email ujjwal777roy@gmail.com or open an issue in the repository.
-
----
-
-## 📊 Project Stats
+## Project Stats
 
 - **Total Lines of Code:** ~3,000+
 - **Number of Activities:** 6
@@ -387,7 +338,6 @@ For support, email ujjwal777roy@gmail.com or open an issue in the repository.
 
 <div align="center">
 
-**Made with ❤️ and Kotlin**
 
 ⭐ Star this repository if you find it helpful!
 
