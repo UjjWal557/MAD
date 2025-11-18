@@ -1,4 +1,4 @@
-# Practical – Android Implicit & Explicit Intents
+# Practical 3 – Android Implicit & Explicit Intents
 
 This Android application demonstrates the use of **Explicit Intents**, **Implicit Intents**, **Login & Registration navigation**.  
 Users can browse URLs, dial numbers, open call logs, use the camera, open the gallery, view alarms, and navigate between activities.
@@ -156,3 +156,4 @@ dependencies {
 ## Support
 
 If you found this project helpful, please give it a ⭐ on GitHub!
+
