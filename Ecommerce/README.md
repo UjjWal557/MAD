@@ -336,11 +336,7 @@ Glide.with(context)
 
 ---
 
-<div align="center">
-
 
 ⭐ Star this repository if you find it helpful!
 
-[Report Bug](https://github.com/UjjWal557/ecommerce-android-app/issues) · [Request Feature](https://github.com/UjjWal557/ecommerce-android-app/issues)
-
-</div>
+---
