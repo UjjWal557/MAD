@@ -1,6 +1,6 @@
 # JetPack Authentication App
 
-A modern Android authentication application built with Jetpack Compose, featuring login and registration screens with navigation.
+An android authentication application built with Jetpack Compose, featuring login and registration screens with navigation.
 
 ## Features
 
