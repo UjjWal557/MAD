@@ -36,13 +36,13 @@ This Android application demonstrates how **Activity Lifecycle methods** work us
 ---
 
 ## Project Structure
-
+```
 app/
 ├── java/com/example/practical2/
 │   └── MainActivity.kt
 └── res/layout/
     └── activity_main.xml
-
+```
 
 ---
 
@@ -97,9 +97,6 @@ Contains:
 Defines a simple layout with:
 - A blue title section  
 - A central message text  
-
----
-
 
 ---
 
