@@ -17,7 +17,7 @@ Users can browse URLs, dial numbers, open call logs, use the camera, open the ga
 ---
 
 ## Screenshots
-Main Screen
+
 ![Main Screen](screenshots/main.png)
 
 ---
@@ -157,5 +157,6 @@ dependencies {
 ## Support
 
 If you found this project helpful, please give it a ⭐ on GitHub!
+
 
 
