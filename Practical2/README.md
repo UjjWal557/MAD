@@ -100,4 +100,25 @@ Defines a simple layout with:
 - A central message text  
 
 ---
+## Author
 
+**Ujjwal Roy**  
+- GitHub: [@UjjWal557](https://github.com/UjjWal557)
+- Email: ujjwal777roy@gmail.com
+
+---
+
+## Acknowledgments
+
+- Kotlin Official Documentation
+- JetBrains Kotlin Tutorials
+- Stack Overflow Community
+- Android Developers Kotlin Guide
+
+---
+
+## Support
+
+If you found this project helpful, please give it a ⭐ on GitHub!
+
+---
