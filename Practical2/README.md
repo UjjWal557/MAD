@@ -24,10 +24,14 @@ This Android application demonstrates how **Activity Lifecycle methods** work us
 ## Screenshots
 
 ### Toast & Snackbar Example
-![Toast Example](screenshots/toast.png)
-![Snackbar Example](screenshots/snackbar.png)
+
+<p align="left">
+  <img src="screenshots/toast.png" alt="Toast Example" width="300" height="500"/>
+  <img src="screenshots/snackbar.png" alt="Snackbar Example" width="300" height="500"/>
+</p>
 
 ### Logcat Output
+
 ![Logcat Screenshot](screenshots/logcat.png)
 
 ---
