@@ -6,25 +6,34 @@ A modern Android alarm clock application built with Kotlin that demonstrates the
 
 ## Features
 
-- ✅ Custom Alarm Creation with TimePicker
-- ✅ Real-time Clock Display (TextClock)
-- ✅ Alarm Sound Playback using MediaPlayer
-- ✅ Background Service for Alarm Handling
-- ✅ BroadcastReceiver for Alarm Triggers
-- ✅ Material Design UI with CardViews
-- ✅ Beautiful Gradient Background
-- ✅ Alarm Cancellation Feature
-- ✅ Edge-to-Edge Modern UI
+-  Custom Alarm Creation with TimePicker
+-  Real-time Clock Display (TextClock)
+-  Alarm Sound Playback using MediaPlayer
+-  Background Service for Alarm Handling
+-  BroadcastReceiver for Alarm Triggers
+-  Material Design UI with CardViews
+-  Beautiful Gradient Background
+-  Alarm Cancellation Feature
+-  Edge-to-Edge Modern UI
 
 ---
 
 ## Screenshots
 
-<p align="center">
-  <img src="screenshots/main_screen.png" width="250" alt="Main Screen"/>
-  <img src="screenshots/alarm_set.png" width="250" alt="Alarm Set"/>
-  <img src="screenshots/time_picker.png" width="250" alt="Time Picker"/>
-</p>
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>Main Screen</b></td>
+      <td align="center"><b>Alarm Set</b></td>
+      <td align="center"><b>Time Picker</b></td>
+    </tr>
+    <tr>
+      <td><img src="screenshots/main_screen.png" width="250" alt="Main Screen"/></td>
+      <td><img src="screenshots/alarm_set.png" width="250" alt="Alarm Set"/></td>
+      <td><img src="screenshots/time_picker.png" width="250" alt="Time Picker"/></td>
+    </tr>
+  </table>
+</div>
 
 ---
 
@@ -234,14 +243,14 @@ val pendingIntent = PendingIntent.getBroadcast(
 
 ## Key Learning Outcomes
 
-- ✅ Working with **AlarmManager** for scheduling tasks
-- ✅ Implementing **BroadcastReceiver** for system events
-- ✅ Creating **Background Services** with MediaPlayer
-- ✅ Using **PendingIntent** for delayed actions
-- ✅ Handling **Runtime Permissions** (Android 12+)
-- ✅ **TimePickerDialog** for user input
-- ✅ **Material Design** components and theming
-- ✅ **Edge-to-Edge UI** with WindowInsets
+-  Working with **AlarmManager** for scheduling tasks
+-  Implementing **BroadcastReceiver** for system events
+-  Creating **Background Services** with MediaPlayer
+-  Using **PendingIntent** for delayed actions
+-  Handling **Runtime Permissions** (Android 12+)
+-  **TimePickerDialog** for user input
+-  **Material Design** components and theming
+-  **Edge-to-Edge UI** with WindowInsets
 
 ---
 
@@ -286,20 +295,6 @@ android {
 
 ---
 
-## Future Enhancements
-
-- [ ] Multiple alarm support
-- [ ] Alarm labels/descriptions
-- [ ] Repeat options (daily, weekly, custom)
-- [ ] Snooze functionality
-- [ ] Custom alarm sounds
-- [ ] Vibration patterns
-- [ ] Alarm history
-- [ ] Notification channels
-- [ ] Dark mode support
-- [ ] Database persistence (Room)
-
----
 
 ## Troubleshooting
 
@@ -320,23 +315,6 @@ android {
 
 ---
 
-## Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
 ## Author
 
@@ -360,19 +338,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you found this project helpful, please give it a ⭐ on GitHub!
 
 ---
-
-## Version History
-
-- **v1.0** (2024) - Initial release
-  - Basic alarm functionality
-  - Material Design UI
-  - Service-based alarm playback
-
----
-
-## Resources
-
-- [Android AlarmManager Documentation](https://developer.android.com/reference/android/app/AlarmManager)
-- [BroadcastReceiver Guide](https://developer.android.com/guide/components/broadcasts)
-- [Services Overview](https://developer.android.com/guide/components/services)
-- [Material Design Components](https://material.io/develop/android)
