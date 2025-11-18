@@ -23,9 +23,6 @@ This Android application demonstrates how **Activity Lifecycle methods** work us
 
 ## Screenshots
 
-### App UI
-![UI Screenshot](screenshots/ui.png)
-
 ### Toast & Snackbar Example
 ![Toast Example](screenshots/toast.png)
 ![Snackbar Example](screenshots/snackbar.png)
